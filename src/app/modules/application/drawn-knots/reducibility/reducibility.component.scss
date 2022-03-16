@@ -1,0 +1,65 @@
+div {
+  text-align: justify;
+}
+blockquote {
+  padding: 5px;
+  background: rgb(233, 199, 199);
+  border-radius: 5px;
+  text-indent: -1em;
+  margin-left: 1em;
+  margin-right: 1em;
+  font-family: 'Times New Roman';
+
+}
+h1 {
+  background-color: rgb(138, 25, 10);
+  border-radius: 1em;
+}
+h2  {
+background-color: rgba(138, 25, 10, 0.527);
+  color:white;
+  text-align: center;
+  font-size: large;
+  border-radius: 1em;
+  margin-top: 2em;
+}
+mark {
+  color: blueviolet;
+  font-weight: bold;
+}
+em {
+  font-style: oblique;
+  color:crimson
+}
+p {
+  text-indent: -3em;
+  margin-left: 4em;
+  margin-right: 4em;
+}
+q {
+  font-family: 'Times New Roman' ;
+}
+nav {
+  border-radius: 1em;
+  background-color: darkorchid;
+}
+.math {
+  font-family: monospace;
+  background-color: aquamarine;
+}
+.imgbg {
+  background-color: aqua;
+}
+.img-hover-zoom {
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+  transition: transform .5s ease;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+  transform: scale(1.5);
+}

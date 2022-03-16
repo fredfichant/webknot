@@ -1,0 +1,283 @@
+<h1 class=" fs-2 text-center border1"><img src="assets\ICON\pencil.svg" style="width: 2em ">dessiner des amas<span
+  class="badge bg-secondary mx-3 my-3">ombres</span></h1>
+<div class="row">
+
+<div class="col-sm-12">
+  <p class='lead'>la projection d'un état sur un plan donne son ombre;
+      tous les croisements apparaissent comme des points doubles, sans la troisième dimension,
+      on peut donc l'assimiler à un graphe dont tous les sommets sont des points doubles</p>
+  <p>on peut considérer l'ombre comme une classe d'équivalence de tous les états ayant même morphologie apparente
+      <small class="text-muted"> aux petites déformations de brins près,
+          c'est-à-dire qui ne créent ni n'annulent de croisements.</small>
+      <br>de plus, il est ultra facile, à partir de l'ombre, de dessiner un nœud trivial : il suffit de dessiner
+      les croisements alternés.
+      ce nœud trivial peut, lui aussi, être considéré comme classe d'équivalence de tous les états ayant la même
+      ombre, y compris lui-même.
+      ce nœud trivial est le premier dont nous sommes assuré.e.s qu'il tienne et est réduit, donc premier.
+      deux nœuds triviaux différents ne peuvent avoir la même ombre, de quelque manière qu'on s'y prenne;
+      ce fait permet d'éviter les doublons dans les tables habituelles de nœuds lorsque nous sont présentés les
+      nœuds alternés.
+      distincts, nous pouvons donc les compter car chacun vaut un.
+      quels que soient le nombre de ronds qui les composent et leurs nombres de croisements, ces nombres sont
+      toujours finis.
+      dire "un nœud à un nombre infini de ronds et de croisements" est une litote,
+      mais cet infini est pensable et dicible; de ce point de vue, les nœuds sont porteurs de deux ensembles
+      numériques infinis couplés,
+      c'est-à-dire de deux séries arithmétiques simultanées infinies : la série des ronds et celle des
+      croisements.
+      ce fait les apparente à d'autres éléments qui s'offrent spontanément à la "binarité", par exemple les
+      nombres complexes,
+      opérateurs à deux "dimensions", les matrices, etc..
+  </p>
+  <figure class="container-fluid text-center">
+      <img src="assets\SVG\ombre\Ntrivial.svg" class="imgbg">
+      <figcaption>noeuds triviaux et leurs ombre</figcaption>
+  </figure>
+  <h2>la parure</h2>
+  <p>on peut définir la parure comme une paire de sous-graphe du graphe de connexité,
+      bien qu'un état puisse être mono-paré lorsque le graphe et le sous-graphe se confondent</p>
+  il y a plusieurs méthodes pour parer un état détaillée dans le livre pnr. les voici :
+  <h3>parement avec les coches alternées</h3>
+  <figure class="img-fluid img-hover-zoom overflow-visible">
+      <img src="assets\SVG\ombre\parure1.svg"
+      class="imgbg">
+  </figure>
+  <ol type="1">
+      <li>considérons un état de noeud dont les zones sont marquées par les sommets blanc et noir des deux graphes
+          de connexité.</li>
+      <li>nous marquons une quelconque portion de rond, entre deux croisements consécutifs, par une coche simple.
+      </li>
+      <li>puis nous marquons d'une coche double les deux portions d t de cette façon; c'est à dire deux portions
+          de rond qui se touchent en un croisement porte des signes différents.</li>
+      <li>à la fin, chaque croisement est muni de quatre marques, deux coches simples et deux coches doubles.
+          parmi les quatres qutres quadrants, deux, connexes entre eux, portent les deux signes opposés : ce sont
+          les quadrants mixtes.</li>
+      <li>nous traçons une arête par croisement de telle sorte qu'elle traverse les quadrants mixtes et joigne les
+          sommets qui marquent les zones auxquelles ils appartiennent.</li>
+  </ol>
+  <p>parures d'un nœud à deux ronds</p>
+  <p>il y a deux possibilités de parement pour un nœud à deux ronds, ce qui donne deux paires de parures.
+      <br>notez qu'entre les paires de parures, il s'effectue un quart de tour, on peut ainsi obtenir l'une à
+      partir de l'autre
+  </p>
+  <figure class="  img-hover-zoom overflow-visible">
+      <img src="assets\SVG\ombre\parure2.svg"
+      class="imgbg">
+  </figure>
+  <p>lorsqu’il y a plusieurs ronds, il y a théoriquement différentes parures possibles : pour “R” ronds il y a
+      2<sup>R - 1</sup> parures du fait de la combinatoire des orientations des ronds, ce qui entraîne aussi qu’il
+      y a plusieurs manières de dessiner une même parure.
+      <br> pourquoi “théoriquement”? parce que pratiquement certaines parures s’identifient du fait des symétries
+      existantes.
+      le nombre p des parures est donc mieux rendu par : p ≤ 2<sup>R - 1</sup>.
+      en fait, même pour les noeuds à plusieurs ronds, les parures sont des cycles dans l’ombre, ce sont même des
+      paramètres invariables de l’ombre, ce qui signifie qu’ils sont attachés à la morphologie des noeuds.
+      (voir § <a routerLink="/tresse" routerLinkActive="active">présentation en tresse</a>).
+      les 2<sup>2-1</sup> = 2 parures pour deux ronds, les 2<sup>3-</sup>1 = 4 parures pour trois ronds etc..
+  </p>
+  <h3>lecture de l'orientation</h3>
+  <figure class="img-hover-zoom overflow-visible">
+      <img src="assets\SVG\ombre\parure3.svg"
+      class="imgbg">
+  </figure>
+  <ol type="a">
+      <li>nous orientons les ronds d'un état de nœud en reproduisant la même flêche sur toutes les portions d'un
+          même rond.</li>
+      <li>le quadrant fermant est celui où les deux flêches divergent à partir du lieu de croisement.</li>
+      <li>nous dessinons une arête par croisement de telle sorte qu'elle traverse les quadrants ouvrant et fermant
+          et joigne les sommets des zones connexes auxquelles ils appartiennent</li>
+  </ol>
+  <p>cette maniére de produire les arêtes de parure donne le même résultat que le cochage des portions de ronds
+  </p>
+
+
+
+  <h3>la parure sur l'état et le graphe</h3>
+  <div class="d-flex flex-row justify-content-center">
+      <div>
+          <p>il y a deux parures, la faufilante p, que nous colorons généralement en bleu, et la sinuante p', que
+              nous colorons généralement en rouge ou que nous ne colorons pas;
+              <br>sur le graphe leur distinction apparaît ainsi : la faufilante "coupe" les arêtes et traverse les
+              zones du graphe,
+              la sinuante suit les arêtes qu'elle pare, elle se confond donc avec elles.
+              une parure peut être constituée de plusieurs tenants qui sont nécessairement séparés par l'autre
+              parure.
+          </p>
+      </div>
+      <div>
+          <img src="assets\SVG\graphes\parure.svg"
+          class="imgbg">
+      </div>
+  </div>
+  <p>un état peut être <mark>monoparé</mark>, c'est-à-dire qu'il ne possède qu'une seule parure et tous ses croisements y participent,
+      il peut aussi n'être aucunement paré.
+      les dessins de l'état et de son graphe sont accompagnés de la table de l'état.</p>
+  <img src="assets\SVG\graphes\parure2.svg"
+  class="imgbg">
+  <h2 class="text-center">métaboles et métabolites</h2>
+  <p>nous avons dit plus haut que tous les états d'un amas sont <i>parfaitement distincts</i>.
+      cela ne signifie pourtant pas que leurs ombres soient parfaitement distinctes,
+      y compris les nœuds triviaux qui leur sont <i>attachés</i>.
+      de ce point de vue, bien que les états en tant que tels soient distincts, il se peut que deux états aient même ombre.
+      <br>nous appelons <b>métabole</b> l'ensemble constitué d'une ombre,
+      du nœud trivial correspondant et de tous les états réduits ayant cette ombre et ce nœud trivial comme <i>classes d'équivalences</i>,
+      quelles que soient leurs <a routerLink="/portance" routerLinkActive="active">portances</a>.
+      ces états sont les <b>métabolites</b> du métabole.
+      l'ombre et son nœud trivial forment la <i>racine</i> du métabole.
+      un amas peut donc offrir moins de métaboles qu'il ne comporte d'états.
+      <br>dans nos dessins ci-dessous,
+      <br>(a) est l'ombre d'un métabole à 8 croisements,
+      <br>(b) est le nœud trivial et eux deux forment la racine du métabole dont deux métabolites sont dessinés
+      <br>(c) et (d) appartenant à deux amas différents de deux nœuds premiers différents.
+      (exercice : trouvez lesquels).
+      </p><p>nous avons vu aussi que la parure est un paramètre de l'ombre,
+      ce qui signifie qu'en tant que paramètre morphologique associé à la racine du métabole il est nécessairement le paramètre commun à tous les métabolites du même métabole.
+      associées à la portance qui recueille les ornures sur l'état, parure commune et ornures différenciées génèrent la tournure singulière de chaque métabolite.
+      pour un métabole donné, la parure de tous les métabolites est absolument identique pendant que les ornures peuvent varier et donc les tournures.
+      dans certains cas les portances, ordinairement différentes, peuvent être identiques (voir plus haut l'amas du 8<sub>20</sub>).
+     <br> pour tous les état d'un amas, la différence de tournures est identique.
+      un amas offre donc des métabolites parfaitement distincts, ce qui signifie qu'il "s'arrime" simultanément à autant de métaboles qu'il possède d'états, les métamorphoses d'états faisant passer d'un métabole à l'autre.
+      l'amas apparaît donc aussi comme un "filet" arrimé à plusieurs "piles" qui supportent plusieurs filets (au moins un) "empilés" les uns sur les autres.
+      tout cela, "filets" et "piles", dessine la trame d'un espace dynamique, mouvant, à la fois élémentaire et complexe, au gré des nuées.
+      </p><p>nous présentons trois amas de trois nœuds 8<sub>19</sub>, 8<sub>20</sub> et 8<sub>21</sub>, répartis selon leurs sept métaboles, chaque colonne représentant un métabole,
+      sans sa racine complète à savoir sans l'ombre mais avec le nœud trivial correspondant.
+      nous faisons confiance à l'oeil de la lectrice et du lecteur pour reconnaître les morphologies.
+  <figure class="  img-hover-zoom overflow-visible">
+      <img src="assets\PNG\metaboles.png" class="  img-fluid w-50 imgbg">
+  </figure>
+  (exercice : dessinez et retrouvez dans une table des nœuds usuelle les sept nœuds triviaux correspondant à nos
+  sept métaboles, et, pourquoi pas, dessinez leurs racines complètes).
+  le nœud dont le numéro est entre parenthèses est présenté sous forme duale (par changement de présentation) dans
+  les tables de nœuds habituelles.
+  les deux 8<sub>15</sub> et 8<sub>15~</sub> sont deux états mutuellement métamorphosables, par la permutation, du
+  même nœud.
+  </p>
+  <div class="d-flex flex-row justify-content-center">
+      <p style="margin-left: 0rem;"><span class="text-decoration-underline">observations portant sur les torsades.</span>
+          <br>les deux états du [8<sub>18</sub>] ne possèdent aucune torsade multiple, nous les appelons états
+          très-desserrés.
+          à l'inverse, les deux états du [8<sub>5</sub>] ne comportent que des torsades multiples, deux torsades
+          triples et une torsade double;
+          pour cela nous les appelons états très-resserrés.
+          nous décrivons ainsi les états en fonction de leurs compositions en torsades :
+          <br> soit t pour les triples, d pour les doubles et s pour les simples, les croisements isolés;
+          alors chaque état est décrit par un mot-torsade tds dans lequel chaque lettre représente le nombre de
+          torsades correspondantes.
+          <br>nous obtenons la liste suivante, que nous nommons du nœud trivial représentant entre crochets [8k],
+          depuis l'état ne possédant aucune torsade multiple jusqu'à ceux ne possédant que des torsades multiples.
+          <small class="text-muted">(on retrouve le comptage des croisements en écrivant l'addition : at + bd + cs
+              = 3a + 2b + c = C le nombre total de croisements de l'état, où les a, b et c représentent le nombre
+              de torsades)</small> :
+          <br>
+
+              <span class="math">[8<sub>&#123;18&#125;</sub>] = 008, [8<sub>&#123;17&#125;</sub>] = [8<sub>&#123;16&#125;</sub>] = 024, [8<sub>&#123;15&#125;</sub>] = [8<sub>&#123;15~&#125;</sub>] = 032, [8<sub>&#123;10&#125;</sub>] = 121</span>
+
+          et <span class="math">[8<sub>5</sub>] = 210</span>
+          <br>– si nous voulons ordonner cette liste relativement au serrage et si nous prenons comme
+          symbole le signe "&lt;", "x &lt; y" signifiant "x est moins serré que y" , la liste s'écrit :
+              <span class="math">[8<sub>18</sub>] &lt; [8<sub>17</sub>],[8<sub>16</sub>] &lt; [8<sub>15</sub>] &lt; [8<sub>10</sub>] &lt; [8<sub>5</sub>]</span>
+               ordre qui retrouve implicitement le calcul des nœuds comme chez conway par exemple.
+              on peut, sans trop déroger au raisonnement scientifique, imaginer la fiction suggestive selon
+              laquelle plus un état est resserré et plus il est "rigide" et offre plus d'"énergie potentielle".
+              à l'inverse un état très desserré semble plus flexible et offre moins d'énergie, il serait ainsi pl
+              us"mou".
+      </p>
+      <figure class="  img-hover-zoom overflow-visible">
+          <img src="assets\SVG\ombre\serie8.svg" style="width: 21rem;"
+          class="imgbg">
+          <figcaption>extrait de la table de rolfsen</figcaption>
+      </figure>
+  </div>
+
+  <h2 class="text-center">morphologie, métaboles et tables des nœuds</h2>
+  <p>il est possible de décrire un amas par la #portance des états qui le constituent et donc de comparer des amas
+      entre eux.
+      la projection métabolique est un moyen simple et immédiat de comparer des amas comme le montre le dessin des
+      métaboles ci-dessus.
+      <br>mais une comparaison plus instructive entre amas porte sur des amas à même nombre d'états dont les états
+      ont mêmes nombres de ronds et de croisements.
+      la portance d'un état est le mot numérique circulaire qui décrit la portée des arcs dans l'ordre de
+      succession
+      (voirt § <a routerLink="/reductibilite" routerLinkActive="active">réductibilité</a>), c'est-à-dire de
+      lecture, des arcs le long de l'état en partant d'un arc de portée minimum jusqu'à l'arc de portée maximum.
+      en pratique on s'arrange pour écrire ce mot en respectant l'ordre lexicographique; quelquefois on trouve un
+      état pour lequel la portance admet soit deux arcs de portée 0 comme départs possibles du mot,
+      soit les deux orientations opposées de lecture à partir d'un même arc.
+      deux états de même métabole ayant des portances différentes sont distincts.
+  </p>
+  <h2 class="text-center">récapitulation : métaboles versus amas</h2>
+  <ul>
+      <li>1 — un amas est constitué de différents états tous métamorphosables les uns en les autres par des
+          métamorphoses régulières (qui ne changent pas le nombre de croisements) directement ou indirectement.
+      </li>
+      <li>2 — tous les états (ou presque tous) du même amas ont une ombre, et donc la parure qui s'en construit,
+          différente(s). il n'y a pas d'ombre, et donc pas de parure, de l'amas. </li>
+      <li>3 — ornures et parures variantes dans l'amas se combinent pour former la différence de tournure
+          invariante de l'amas. </li>
+      <li>4 — un amas s' arrime à autant de métaboles qu'il contient d'états d'ombres différentes, c'est-à-dire de
+          projections distinctes. </li>
+      <li>5 — une ombre et sa parure sont communes à tous les métabolites de leur métabole; elles forment, avec le
+          nœud trivial qui s'en dessine, la racine du métabole. </li>
+      <li>6 — le nœud trivial qui leur correspond est commun à tous les métabolites du même métabole dont il est
+          le premier et alterné. </li>
+      <li>7 — la tournure n'est pas un invariant métabolique. </li>
+      <li> 8 — les métabolites d'un même métabole s'obtiennent les uns des autres par réalternance qui est, ici,
+          une forme, un opérateur de l' homotonie.</li>
+  </ul>
+  <h2 class="text-center">comptage des nœuds</h2>
+  <p>α- le point 6 ci-dessus indique que tous les nœuds alternés, ne recelant aucun motif de métamorphose
+      basculant (comme la permutation, par exemple)
+      à même nombre C de croisements et même nombre R de ronds sont nécessairement distincts.
+      les métamorphoses basculantes sont les seules qui peuvent transformer un état alterné en un autre alterné
+      n'ayant pas même morphologie,
+      et donc appartenant à un autre métabole.
+      <br>les deux congénères, qui pourraient apparaître comme deux nœuds premiers différents, ne seraient en fait
+      que
+      deux états différents d'un même nœud dont il ne faudrait choisir de dessiner qu'un seul (en indiquant
+      éventuellement l'autre).
+      ces deux états verraient leurs paires de graphes de connexités duaux différentes, et seraient donc bien, en
+      conséquence, deux états distincts du même nœud;
+      ces deux états composent l'amas unique du nœud considéré, amas qui s'arrime donc à deux métaboles.
+      cependant certaines permutations "ratent" c'est-à-dire qu'elles ne font que changer la présentation
+      del'état, en ce cas les paires de graphes duaux sont les mêmes;
+      l'amas du nœud n'est composé que d'un seul état; dessiner une présentation de l'état suffit.
+  </p>
+  <p> <span class="text-decoration-underline">β- soit une liste complète de nœuds à C croisements et R ronds</span> telle qu'elle peut être dessinée dans une table usuelle de nœuds;
+      elle comporte N nœuds que nous noterons  <span class="math">N(C,R)</span> : il s'y trouve <b>a</b> états alternés et <b>b</b>
+      états non-alternés, <b>N = a + b</b>.
+      <br> nous admettrons que cette liste est sans erreur, c'est-à-dire que tous les nœuds N(C,R) y sont distincts et qu'ils y sont tous.
+      les a renferment les triviaux statiques (à un seul état) qui sont donc représentés par eux-mêmes, que nous noterons a , il y en a <i>t</i>,
+      et les t triviaux métamorphosables (donc à plusieurs états) représentés par un seul de leurs états, que nous noterons a , il y en a <i>m</i>.
+       <span class="math">N = (t + m) + b</span>.
+      comme nous savons que deux états triviaux sont de deux métaboles, il y a donc <i>t</i> métaboles.
+      <br>les a appartiennent pour la même raison à m métaboles, mais ils possèdent de plus <i>u</i> états métamorphosables
+      (non m dessinés);
+      alors ces <i>u</i> états participent éventuellement à <i>u'</i> métaboles avec <i>u' ≤ u</i>.
+      nous avons donc, pour les a, m + u' m métaboles, soit  <span class="math">mét(N) = [t + (m + u')] + b</span> métaboles,
+       avec mét(N) > N ou mét(N) = N + u'.
+      <br>nous raisonnons pareillement pour les b nœuds métamorphosables; mét(b) = b + b'.
+      <br>à ce stade, on peut donc écrire :  <span class="math">mét(N) = mét(a) + mét(b) = [t + (m + u')] + (b + b')</span>,
+      <br>où  <span class="math">mét(N) = N + u' + b'</span>
+  </p>
+  <p><span class="text-decoration-underline">γ- parmi les a nœuds triviaux, certains peuvent être réalternés</span>,
+      c'est-à-dire qu'il est possible d'effectuer sur eux des idd.
+      nous verrons plus loin un tel algorithme de réalternance (voir section#réalternances et couplages).
+      <br>à l'inverse, les états métamorphosables ont tous une "projection" triviale et cette "projection" se trouve nécessairement déjà comptée dans la liste alternée,
+      sinon cela signifierait que cette liste est incomplète, de même que les nœuds triviaux réalternables se trouvent eux aussi nécessairement dans les amas des nœuds métamorphosables pour les mêmes raisons.
+      <br>ce qui fait que le nombre des nœuds N(C,R) est nécessairement égal au nombre de tous les métaboles des nœuds non alternés,
+      ce nombre est  <span class="math">mét(b) = b + b'</span> , auxquels s'ajoutent tous les états triviaux non réalternables,
+      nombre que nous notons <b>a–</b>.
+      <br> <span class="math">N(C,R) = a– + mét(b)</span>.
+  </p>
+  <p>voyons ce que cela donne pour les vingt-et-uns N(8,1) avec la table des sept métaboles dessinée ci-dessus :
+      <br>1° -- il y a dix-huit nœuds triviaux, de 8<sub>1</sub> à 8<sub>18</sub> et trois nœuds non alternés, de
+      8<sub>19</sub> à 8<sub>21</sub>.
+      <br>2° -- parmi ces dix-huit triviaux douze sont métamorphosables car ils possèdent au moins une permutation, huit à une et quatre à deux
+      (exercice : trouvez lesquels).
+      <br>3° -- nous avons vu que six d'entre les triviaux sont réalternables (exercice : trouvez lesquels).
+      cela signifie que les métabolites qui leur correspondent sont des états métamorphosables qui parcourent les
+      amas des trois nœuds 8<sub>19</sub> , 8<sub>20</sub> 8<sub>21</sub>.
+      dans ce cas nous avons : b = 3, mét(b) = 6 et a = 12.
+  </p>
+</div>
+</div>

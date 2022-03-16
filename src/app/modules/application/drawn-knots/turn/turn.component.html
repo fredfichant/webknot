@@ -1,0 +1,219 @@
+<div class="container-fluid bg-success text-light">
+  <h1 class="fs-2 text-center text-warning">
+    initiation à la plastique nœudienne<span
+      class="badge bg-secondary mx-3 my-3"
+      >tournure</span
+    >
+  </h1>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <h2>tournure, une lecture de/dans l'état</h2>
+      <div class="d-flex flex-row justify-content-center bg-secondary text-light rounded ps-4 py-2 pe-2 shadow mb-4">
+        <p class="lead">
+          les deux brins d'un <b>autocroisement</b> sont du <i>même </i> <b>rond</b>,
+          <br>tandis que ceux d'un <b>intercroisement</b> sont de deux ronds <i>distincts</i>.
+        </p>
+        <img src="assets\SVG\tournure\interauto1.svg"
+        style="width: 14em"
+        class="imgbg " />
+      </div>
+    </div>
+    <div class="row my-3">
+      <div class="col-sm-12">
+        <h2 class="text-center">autocroisements</h2>
+        <div class="d-flex flex-row justify-content-center align-items-center bg-secondary text-light rounded ps-4 py-2 pe-2 shadow mb-4">
+          <p>
+            une extrémité d'un brin d'un autocroisement se raboute à une
+            extrémité de l'autre brin. en simplifiant le périple du rond entre
+            ces deux extrémités, nous associons à chaque autocroisement l'une
+            des deux bouclettes suivantes : dessin <br />ces deux bouclettes ne
+            sont pas superposables par glissement sur le plan. deux
+            autocroisements qui correspondent à la même bouclette ont la même
+            tournure, et des tournures opposées dans le cas contraire.
+          </p>
+          <img
+            src="assets\SVG\tournure\bouclettes.svg"
+            style="width: 8em"
+            class="imgbg"
+          />
+        </div>
+        <div class="d-flex flex-row justify-content-center align-items-center bg-secondary text-light rounded ps-4 py-2 pe-2 shadow mb-4">
+          <p>
+            considérons un état d'un nœud à un seul rond, ne comportant donc que
+            des autocroisements, et dessinons à côté de chaque croisement la
+            bouclette correspondante. remplaçons (arbitrairement) les bouclettes
+            par les lettres <b>t</b> et <b>t'</b>. <br />
+            peu importe que nous attribuions la tournure t ou t' à un premier
+            croisement choisi arbitrairement, seules l'opposition et l'identité
+            des tournures de chaque croisement relativement à chaque autre sont
+            significatives.
+          </p>
+          <div>
+            <img
+              src="assets\SVG\tournure\tournure1.svg"
+              style="width: 20rem"
+              class="imgbg"
+            />
+          </div>
+        </div>
+        <div class="d-flex flex-row justify-content-center align-items-center">
+          <p>
+            1ère observation : des autocroisements qui constituent une torsade
+            multiple alternée, soit une suite de lunules, ont la même tournure.
+
+            <br />
+            2 ème observation : si la relation lunulaire est non alternée, les
+            autocroisements ont des tournures opposées.
+          </p>
+          <figure class="img-hover-zoom overflow-visible">
+            <img src="assets\SVG\tournure\tournure2.svg" class="imgbg" />
+            <figcaption>1ère</figcaption>
+          </figure>
+          <figure class="img-hover-zoom overflow-visible">
+            <img src="assets\SVG\tournure\autotour.svg" class="imgbg" />
+            <figcaption>2ème</figcaption>
+          </figure>
+        </div>
+        <p>
+          à partir de ces deux observations, reprenons l'état du nœud ci-dessus
+          sur lequel nous avons apposé les tournures par le truchement des
+          bouclettes remplacées par des lettres. nous mettons en évidence les
+          relations lunulaires qui constituent la lecture lunulaire des
+          tournures. dessins. en attribuant la tournure t à un croisement
+          quelconque, nous déterminons la tournure de chacun des autres
+          croisements par lecture lunulaire. dessins. que d'autres brins
+          traversent ces lunules ne change rien à la relation lunulaire qui lie
+          ces autocroisements. dessins. la tournure de l'état du nœud est le
+          couple des nombres de croisements répartis selon les deux tournures :
+          <span class="math">T = (x, y)</span>, que nous pouvons écrire :
+          <span class="math">T = xt + yt'</span>
+          si nous avions attribué la tournure <b>t'</b> au même croisement
+          quelconque, les termes de la tournure <b>T</b> de l'état seraient
+          inversés, mais les rapports (notamment la valeur absolue de leur
+          différence), resteraient inchangés.
+        </p>
+
+        <h2 class="text-center">intercroisements</h2>
+        <div class="row">
+          <div class="col sm-3 img-hover-zoom overflow-visible w-25">
+            <img
+              src="assets\SVG\tournure\intercroistour.svg"
+              style="width: 28em"
+              class="imgbg text-center mt-2"
+            />
+          </div>
+          <div class="col sm-9">
+            <p>
+              chaque brin d'un intercroisement se raboute à lui-même. <br />les
+              intercroisements vont toujours par paire : le raboutage des brins
+              d'un intercroisement suppose l'existence d'un autre
+              intercroisement, le plus simple est le simple enlacement à deux
+              ronds et deux croisements. pour lire la tournure des
+              intercroisements de deux ronds, <b>p</b> et <b>q</b>, nous les
+              transformons, par homotonie, en ajoutant un croisement. il suffit
+              de remplacer l'un des intercroisements par une lunule de même
+              ornure. il y a deux manières de le faire.>selon que l'axe de la
+              lunule correspond à l'une ou à l'autre des diagonales du poinçon.
+              de l'une à l'autre la tournure s'impose.
+            </p>
+          </div>
+        </div>
+        <p>
+          mais par chacune nous retrouvons les mêmes oppositions et identités de
+          tournures entre les croisements. en comptant pour +1 le croisement
+          ajouté homotoniquement
+          <small>artifice par lequel nous lisons la tournure</small>, nous avons
+          en un cas
+          <span class="math">T<sub>&#123;pq&#125;</sub> = (x + 1, y)</span> , en
+          l'autre
+          <span class="math">T'<sub>&#123;pq&#125;</sub> = (x, y + 1)</span>
+          pour un état d'un nœud à deux ronds ne comportant que des
+          intercroisements, il est indifférent d'écrire la tournure comme
+          <span class="math">T<sub>&#123;pq&#125;</sub></span> ou
+          <span class="math">T'<sub>&#123;pq&#125;</sub></span> puisque chacune
+          se lit comme symétrie de l'autre.
+        </p>
+        <div class="d-flex flex-row align-items-center">
+          <p>
+            par contre, s'il existe aussi des autocroisements, nous devons
+            déterminer par le truchement des bouclettes la tournure d'au moins
+            un autocroisement par rond.
+          </p>
+          <div class="img-hover-zoom overflow-visible w-25">
+            <img src="assets\SVG\tournure\tournure4.svg" class="imgbg mb-3" />
+          </div>
+        </div>
+        <p>
+          en traduisant les bouclettes par des lettres dont nous apposons une
+          arbitrairement auprès d'un premier autocroisement quelconque, nous
+          avons lié chaque bouclette à une lettre. dans ce cas, nous devons
+          respecter cette liaison dans l'écriture/lecture pour tous les
+          croisements. puis nous procédons par bouclettes ou relations
+          lunulaires pour les autres autocroisements.
+        </p>
+        <div class="text-center img-hover-zoom overflow-visible">
+          <img
+            src="assets\SVG\tournure\tournure3.svg"
+            class="w-75 imgbg mb-2"
+          />
+        </div>
+        <p>
+          nous déterminons ainsi la tournure <span class="math"></span>'T<sub
+          ></sub>a'> de la collection des autocroisements de tous les ronds d'un
+          état. ensuite nous ajoutons, selon le protocole homotonique ci-dessus,
+          un croisement pour lire la tournure de la collection des
+          intercroisements,
+          <span class="math">T<sub>&#123;pq&#125;</sub></span> ou
+          <span class="math">T'<sub>&#123;pq&#125;</sub></span
+          >. <br />cette transformation des intercroisements n'a pas d'effet sur
+          la tournure des autocroisements d'origine. il y a deux lectures de la
+          tournure des intercroisements et une seule de celle des
+          autocroisements. en additionnant celle-ci et une des tournures
+          d'intercroisements, nous obtenons une tournure de l'état. comme il y a
+          deux tournures d'intercroisements possibles, il y a donc deux
+          tournures de l'état :
+          <br />
+          <span class="math"
+            >"T<sub></sub>1 = T<sub></sub>a + T<sub></sub>&#123;pq&#125;</span
+          >
+          et
+          <span class="math"
+            >"T<sub></sub>2 = T<sub></sub>a + T'<sub></sub>&#123;pq&#125;</span
+          >
+        </p>
+        <h2 class="text-center">
+          lecture-écriture de la tournure sur l'état : tournures corrélées des
+          croisements
+        </h2>
+        <div class="text-center my-3">
+          <img src="assets\SVG\tournure\lectlun1.svg" class="img-fluid imgbg" />
+        </div>
+        <p>
+          à partir de l'attribution, arbitraire, d'une tournure à un croisement
+          d'un état nœudien peut se lire, par expansion successive, la tournure
+          des autres croisements et par suite, de la tournure de l'état. on
+          utilise, pour cela la lecture lunulaire qui s'effectue ainsi :
+        </p>
+        <ol type="a">
+          <li>
+            nous repérons un motif lunulaire direct ou indirect dans l'état, et
+          </li>
+          <li>
+            lorsque la lunule repérée est enlacée, les deux croisements sont
+            alternés ceci entraîne que leurs tournures sont identiques; soit
+            <b>t</b>, soit <b>t'</b> . lorsque la lunule est non alternée ceci
+            entraîne que ses croisements ont une tournure opposée, l'un
+            <b>t</b> l'autre <b>t'</b> .
+          </li>
+          <li>
+            puis lunule après lunule, nous attribuons une tournure à chaque
+            croisement. évidemment les torsades multiples
+            <small class="text-muted">à plus de deux croisements</small>
+            alternées ont même tournure.
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>

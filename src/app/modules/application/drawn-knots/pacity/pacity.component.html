@@ -1,0 +1,59 @@
+<h1 class=" fs-2 text-center text-warning" >initiation à la plastique nœudienne<span class="badge bg-secondary mx-3 my-3">portance</span></h1>
+
+<div class="row">
+
+
+    <div class="col-sm-10">
+
+<p class="lead text-primary">le dessin d'un nœud est composé d’<mark>arcs</mark> définis par leur <mark>portée p</mark>. un arc est la <mark>portion de brin</mark> comprise entre deux<mark>dessous</mark>.</p>
+    <p>rappelons que lorsqu'on dessine un <mark>croisement</mark>, le brin de dessous est fictivement scindé.
+    un arc de portée 0 ne passe au-dessus d’aucun brin, un arc de portée 2 passe au-dessus de deux brins,
+    un arc de portée 1 passe au-dessus d'un brin, ainsi de suite : un arc de portée p passe au-dessus de p brins.</p>
+    <div class="text-center">
+    <img src= assets\SVG\portance\portées012.svg class="img-fluid imgbg" alt="span">
+    </div>
+    <h2>portance</h2>
+<p>nous appelons <mark>portance P</mark> l'ensemble des portées des arcs constituant un état et nous l'écrivons sous forme d'un <em>mot</em> circulaire,
+    à partir d'un arc choisi arbitrairement comme origine, en suivant le brin de façon continue tout le long d'un trajet
+    qui nous ramène à l'arc de départ et en notant au fur et à mesure la portée des arcs successifs rencontrés.
+    il est plus pratique d'arranger ensuite le "mot" selon l'ordre lexicographique,
+    par exemple en partant de l'arc de plus petite portée et en suivant le trajet qui minimalise les portées,
+    car ce peut être un premier élément de distinction de deux états puisque deux états premiers ayant même <em>morphologie</em>
+    et ne possédant pas le même <em>mot-portance</em> sont certainement différents. (voir § #réalternances et couplages).
+    lorsque tous les arcs sont de
+    <span class="math">portée 1</span>, alors le nœud est dit <em>alterné</em> car en suivant le parcours d’un rond,
+    nous passons alternativement du dessous au-dessus à chaque croisement.
+    sa portance s'écrit  <span class="math">P = 11...1...11</span>, mot circulaire comportant autant de 1 que l'état comporte d'arcs,
+    soit le même nombre que celui des croisements : <b>C</b>.
+    ces états de nœuds ne nous intéressent pas car ils sont <em>statiques</em>, c'est-à-dire non métamorphosables, pour la plupart.
+    en général, ils ne présentent qu'un seul état.
+    les seules métamorphoses pouvant être présentes dans un nœud alterné sont les permutations.
+    celles-ci sont d'ailleurs souvent <em>ratées</em> car elles redonnent <i>le même état</i> vu un peu différent. voir la section pliage d'un état.
+    sans motif de métamorphose l'état est dit statique : il ne connaît pas d'état antérieur dont il serait le métamorphosé,
+    ni d'état postérieur qui serait son métamorphosé <small>ce qui revient au même, les métamorphoses étant involutives</small>.
+    les nœuds statiques collent à tel point à leur état que cette notion serait superflue s'il ne s'agissait que d'eux.
+    le recours à la notion d'état n'a de sens et de valeur que pour les nœuds non statiques, les nœuds métamorphosables.</p>
+<div class="text-center">
+    <img src=assets\SVG\portance\noeud-arc.svg class="img-fluid imgbg" alt="span">
+    </div>
+<p>la portance de l'état dessiné ci-dessus, état à un rond et 10 croisements est notée,
+    à partir de l'arc 0 désigné dans le dessin et dans le sens antihoraire :
+     <span class="math">P = 0112102021</span> (voir plus loin #amas).</p>
+
+<p>il est d'ailleurs loisible de considérer de ce point de vue la portance comme un <em>système de numération</em>
+    qui associerait à chaque état son  <em>nombre de gödel</em>?, que nous appelons <mark>ampleur</mark>, minimal <small>c'est-à-dire lu dans  <em>l'ordre lexicographique minimal</em></small>
+    tel que la base soit définie par p<sub>m</sub> (voir le § <a routerLink="/reductibilite">réductibilité</a>).
+    ainsi la portance ici écrite a comme ampleur en <em>base 2</em> :<br>
+     <span class="math">0 &#215; 512 + 1 &#215; 256 + 1 &#215; 128 + 2 &#215; 64 + 1 &#215; 32 + 0 &#215; 16 + 2&#215;8 + 0&#215;4 + 2&#215;2 + 1 = 256 + 128 + 128 + 32 + 16 + 4 + 1 = 565</span>'\tiny '>.
+<br><em>remarque</em>. le choix de la "base" est, ici, tout à fait artificiel; ce choix est motivé par le fait que nous ne désirons pas obtenir des valeurs extravagantes.
+    de plus, manifestement, nous n'écrivons pas en base 2, simplement nous exploitons les puissances de cette base que nous multiplions par les coefficients des portances
+    <small>partant de l'idée que dans un système de numération un nombre s'écrit de manière univoque</small> sous la contrainte de n'utiliser que les coefficients minimaux
+    <small>ceci afin d'éviter la kyrielle de sommants</small>, et le choix de la base 2, comme écriture symbolique
+    <small>même avec des coefficients supérieurs à <b>1</b></small> permet de <i>normaliser</i> toutes les ampleurs;
+    l'ampleur d'un état permet donc de minimiser l'ambiguïté de réattribution des arcs et de leurs portées.
+    mais nous verrons plus tard une "liasse" d'autres nombres <small>binaires ceux-là</small> associés en triplets <mark>(ornure, parure, tournure)</mark>
+    aux états : leurs <mark>mots-codes</mark>.</p>
+</div>
+<div class="col-sm-2"><img src=assets\SVG\portance\portée.svg  class="img-fluid imgbg" alt="span">
+</div>
+</div>

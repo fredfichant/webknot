@@ -1,0 +1,123 @@
+.svg-elem-1 {
+    stroke-dashoffset: 1;
+    stroke-dasharray: 1;
+    animation: draw1 0.5s ease-out  forwards 2s;
+}
+    @keyframes draw1 {
+    100% { stroke-dashoffset: 0;
+        fill : white
+  } 
+}
+  
+.svg-elem-2 {
+    stroke-dashoffset: 1;
+    stroke-dasharray: 1;
+    animation: draw2 0.5s ease-out  forwards 2.6s;
+    }
+    @keyframes draw2 {
+    100% { stroke-dashoffset: 0;
+  } 
+}
+  
+.svg-elem-3 {
+    stroke-dashoffset: 1;
+    stroke-dasharray: 1;
+    animation: draw3 0.5s ease-out  forwards 5.1s;
+}
+    @keyframes draw3 {
+    100% { stroke-dashoffset: 0;
+        fill : white
+          } 
+}
+  
+.svg-elem-4 {
+    stroke-dashoffset: 1;
+    stroke-dasharray: 1;
+    animation: draw4 0.5s ease-out  forwards 5.8s;
+  }
+    @keyframes draw4 {
+    100% { stroke-dashoffset: 0;
+  } 
+}
+  
+.svg-elem-5 {
+    stroke-dashoffset: 1;
+    stroke-dasharray: 1;
+    animation: draw5 0.5s ease-out  forwards 6.5s;
+  }
+    @keyframes draw5 {
+    100% { stroke-dashoffset: 0;
+  } 
+}
+  
+.svg-elem-6 {
+    stroke-dashoffset: 1;
+    stroke-dasharray: 1;
+    animation: draw6 0.5s ease-out  forwards 7.3s;
+  }
+    @keyframes draw6 {
+    100% { stroke-dashoffset: 0;
+        fill : white;
+  } 
+}
+  
+.svg-elem-7 {
+    stroke-dashoffset: 1;
+    stroke-dasharray: 1;
+    animation: draw7 0.5s ease-out  forwards 8s;
+  }
+    @keyframes draw7 {
+    100% { stroke-dashoffset: 0;
+  } 
+}
+  
+.svg-elem-8 {
+    stroke-dashoffset: 1;
+    stroke-dasharray: 1;
+    animation: draw8 0.5s ease-out  forwards 9.7s;
+}
+
+@keyframes draw8 {
+    100% { stroke-dashoffset: 0;
+        fill : white;
+    } 
+  }
+.svg-elem-9 {
+    stroke-dashoffset: 1;
+    stroke-dasharray: 1;
+    animation: draw9 0.5s ease-out  forwards 10.5s;
+  }
+    @keyframes draw9 {
+    100% { stroke-dashoffset: 0;
+    } 
+  }
+
+    .svg-elem-10 {
+        stroke-dashoffset: 1;
+        stroke-dasharray: 1;
+        animation: drawa 0.5s ease-out  forwards 11.1s;
+    }
+        @keyframes draw10 {
+        100% { stroke-dashoffset: 0;
+        } 
+    }
+
+.svg-elem-11 {
+    stroke-dashoffset: 1;
+    stroke-dasharray: 1;
+    animation: draw11 0.5s ease-out  forwards 11.6s;
+  }
+  @keyframes draw11 {
+    100% { stroke-dashoffset: 0;
+    } 
+  }
+.svg-elem-12 {
+    stroke-dashoffset: 1;
+    stroke-dasharray: 1;
+    animation: draw12 0.5s ease-out  forwards 12.2s;
+  }
+  
+  @keyframes draw12 {
+    100% { stroke-dashoffset: 0;
+    } 
+  }

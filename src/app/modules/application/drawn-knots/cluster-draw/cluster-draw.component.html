@@ -1,0 +1,53 @@
+<h1 class="text-center text-warning fs-2">dessiner un amas et caractère de l'amas</h1>
+<div class="row">
+
+    <div class="col-sm-12">
+        <figure class="  img-hover-zoom overflow-visible imgbg">
+            <img src="assets\SVG\c=8\amas821.svg" style="float: right; padding: 1rem; width: 50%; " alt="amas">
+        </figure>
+        <p class="lead p2">ce chapitre donne une méthode et des outils pour dessiner tous les états d’un amas.
+            <mark>deux états nœudiens sont du même amas, et donc sont deux états du même nœud, s'ils sont métamorphosables l'un en l'autre par métamorphose régulière</mark> , notamment permutation ou retournement.
+            on remarque que leur tournure est identique.
+        </p>
+        <p class="p2">tous les états d'un amas sont métamorphosables l'un en l'autre, les métamorphoses étant aussi involutives,
+            que ce soit directement, par une seule métamorphose, ou indirectement, par plusieurs métamorphoses, c'est-à-dire en passant par d'autres états.
+            c'est la traduction nœudienne des 'histoires' en physique quantique et, maintenant, en gravitation en boucles.
+        <ul>
+            <li> 1°-- aucun état <b>η</b> n'est le 'premier' de l'amas (en dehors de la pratique du dessin);
+                le "temps" classique est donc exclus de l'histoire, mais il demeure en tant qu'effectuation d'une métamorphose,
+                avec un caractère plus 'biologique'. </li>
+            <li>2°-- aucun chemin des métamorphoses n'est privilégié, mais ici, la statistique des histoires est facile à connaître puisqu'elle ne dépend que des motifs de métamorphoses que chaque état recèle. </li>
+
+            <li>3° -- il existe un invariant d'amas, la différence de tournures identique pour chaque état de l'amas ce qui permet d'en exclure tout état réduit métamorphosable à même nombre de ronds et de croisements
+                qui ne possèderait pas cet invariant. cependant, nous ne pouvons tirer aucune conclusion si ces deux états ont même différence de tournures. </li>
+            <li>4°-- les nœuds sont des objets/relations ou relations dessinables qu'on peut faire croître en ajoutant autant de croisements qu'on veut, comme les nombres entiers,
+                ou selon les opérateurs d'<a routerLink="/homotonies" routerLinkActive="active">homotonie nœudienne</a>, vers l'infini sans cesser d'être finis. </li>
+            <li>5°-- la géométrie de cette topologie particulière est relative à chaque état car,
+                pour chaque motif de métamorphose que recèle l'état <b>η</b> , il lui correspond un bâti spécifique de l'état, bâti <b>B</b> qui reste invariant pour la métamorphose considérée,
+                c'est-à-dire que deux états corrélés par les deux états m et m' de la métamorphose ont même bâti B pour cette métamorphose :
+                <span class="math">η<sub>&#123;initial&#125;</sub>é = B + m</span> et
+                <span class="math">η<sub>&#123;initial&#125;</sub>é' = B + m'</span>, le signe '+' représentant la soudure topologique,
+                de telle sorte qu'on peut écrire é' relativement à é :
+                <span class="math">é' = é − m + m'</span>.
+                <br>on appelle #différentiel le terme
+                <span class="math">δ<sub>&#123;mm'&#125;</sub> = m' − m</span>, ce qui permet d'écrire :
+                <span class="math">η<sub>&#123;initial&#125;</sub>é -η<sub>&#123;initial&#125;</sub>é' =  é + δ<sub>&#123;m'm&#125;</sub></span>;">; à l'inverse, pour passer de é' à é,
+                il suffit d'écrire
+                <span class="math">ηé = ηé' + δ<sub>&#123;mm'&#125;</sub></span>,
+                les indices permutent les différentiels n'étant pas commutables avec simplement
+                <span class="math">δ<sub>&#123;m'm&#125;</sub> = − δ<sub>&#123;mm'&#125;</sub></span>. voir plus loin : <a routerLink="/formule" routerLinkActive="active">filmer les métamorphoses</a>.
+                si un état recèle q motifs de métamorphoses, il recèle donc relativement, c'est-à-dire potentiellement, q bâtis;
+                chacun de ces bâtis se retrouvant invariant dans chaque état issu de chacune des métamorphoses.
+                de plus, si l'effectuation d'une métamorphose est continue, le brin glissant ou basculant, son résultat est discret.
+                juste fusion du quantique et du relativiste.
+            </li>
+        </ul>
+
+        <p class='lead'>l'amas d'un nœud est un réseau d'états, généré à partir de n'importe lequel de ses éléments par métamorphoses.
+        <p > en pratique dessiner un amas consiste, à partir d'un état, à repérer et effectuer toutes les métamorphoses possibles et à caractériser chaque état obtenu à l'aide
+            de sa paire de <a routerLink="/graphe" routerLinkActive="active">graphes de connexité duaux</a>, d'une <a routerLink="/formule" routerLinkActive="active">formule particulaire</a>, et d'une #table d'état recueillant les<strong> paramètres nœudiens de l'état : parure, ornure et tournure.</strong>
+        </p>
+    </div>
+    <div class="col-sm-2">
+    </div>
+</div>

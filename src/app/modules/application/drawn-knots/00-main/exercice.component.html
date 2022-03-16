@@ -1,0 +1,43 @@
+<div class="container-fluid">
+  <div class="row mb-1">
+    <div class="col-md-12 bg-secondary text-light rounded">
+      <h2 class="h4 text-center">
+        let's draw knots<i class="ms-2 fa fa-palette"></i>
+      </h2>
+      <p>
+        the knots, here objects, method and instruments of investigation without
+        a priori, for themselves, are those that are said to be primary, reduced
+        to their smallest number of intersections. their metamorphoses are drawn
+        and studied, forming clusters, magmas and clouds. they are continuous,
+        sliding and tilting, regular and irregular, real or virtual. they are
+        the reversals, the permutations and others, the transversions and still
+        other transitions. the plasticity of rare nodes forms the restriction as
+        is said to be general that of nodeian clouds.
+      </p>
+    </div>
+  </div>
+
+  <div class="row pt-2 bg-success rounded">
+    <div
+      *ngFor="let item of items"
+      class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 mb-2"
+    >
+      <div class="nga-card-rotate">
+        <a style="cursor: pointer" routerLink="/drawn-knots/{{ item.link }}">
+          <div class="card">
+            <div class="nga-card-header">
+              <div class="row mt-2">
+                <div class="col-9 col-xl-9">
+                  <h5 class="card-title text-primary">{{ item.name }}</h5>
+                </div>
+                <div class="col-3 col-xl-3">
+                  <i class="{{ item.icon }} fa-lg text-dark"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

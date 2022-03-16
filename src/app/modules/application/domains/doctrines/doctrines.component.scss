@@ -1,0 +1,51 @@
+
+ h1 {
+
+   background-color: rgb(119,221,187)
+ }
+ h2 {
+  background-color: rgb(182,255,109);
+  text-align: center;
+ }
+ em {
+  background-color: rgb(255,182,109)
+ }
+ p {
+  text-align: justify;
+ text-indent: -2em;
+ margin-left: 2em;
+ margin-right: 2em;
+}
+table {
+ margin-left: 1em;
+ margin-right: 1em;
+}
+
+.physique {
+ color: blue;
+}
+.math {
+ color: rgb(3, 101, 114);
+
+}
+.cyber {
+ color: darkorchid;
+
+}
+.psy {
+ color: goldenrod;
+}
+.econo {
+ color: firebrick;
+}
+.ling {
+ color: green;
+}
+.sex {
+ color:red
+}
+thead{
+  background: rgb(28, 31, 34);
+  color:white
+  ;
+}

@@ -1,0 +1,28 @@
+<div class="row mt-5">
+  <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+    <p class="text-center ">contact us !</p>
+    <ul>
+      <li><a routerLink="/contact/mailing">Mailing</a></li>
+      <li><a routerLink="/contact/map">Map</a></li>
+    </ul>
+  </div>
+  <div class="container-fluid py-3">
+
+
+    <share-buttons theme="circles-dark"
+      [include]="['copy', 'facebook', 'email', 'messenger', 'mix', 'line', 'linkedin', 'pinterest', 'print', 'reddit', 'sms', 'telegram', 'tumblr', 'twitter', 'viber', 'vk', 'xing', 'whatsapp']"
+      [showIcon]="true"
+      [showText]="false"
+      url="https://web-knot.web.app/"
+      description="rare knots plastic"
+      twitterAccount="rodrigokamada"
+      class="pt-5">
+    </share-buttons>
+
+
+  </div>
+
+  <div class="col-10 col-sm-10 col-md-7 col-lg-7 col-xl-7 mb-5">
+    <router-outlet></router-outlet>
+  </div>
+</div>

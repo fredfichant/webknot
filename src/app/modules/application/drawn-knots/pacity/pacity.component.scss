@@ -1,0 +1,52 @@
+div {
+  text-align: justify;
+}
+blockquote {
+  padding: 5px;
+  background: rgb(233, 199, 199);
+  border-radius: 5px;
+  text-indent: -1em;
+  margin-left: 1em;
+  margin-right: 1em;
+  font-family: 'Times New Roman';
+
+}
+h1 {
+  background-color: rgb(138, 25, 10);
+  border-radius: 1em;
+}
+h2  {
+background-color: rgba(138, 25, 10, 0.527);
+  color:white;
+  text-align: center;
+  font-size: large;
+  border-radius: 1em;
+  margin-top: 2em;
+}
+mark {
+  color: blueviolet;
+  font-weight: bold;
+}
+em {
+  font-style: oblique;
+  color:crimson
+}
+p {
+  text-indent: -3em;
+  margin-left: 6em;
+  margin-right: 6em;
+}
+q {
+  font-family: 'Times New Roman' ;
+}
+nav {
+  border-radius: 1em;
+  background-color: darkorchid;
+}
+.math {
+  font-family: monospace;
+  background-color: aquamarine;
+}
+.imgbg {
+  background-color: aqua;
+}

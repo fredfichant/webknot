@@ -1,0 +1,246 @@
+<h1 class="fs-2 text-center text-warning">
+  initiation à la plastique nœudienne<span class="badge bg-secondary mx-3 my-3"
+    >réductibilité</span
+  >
+</h1>
+<div class="row">
+  <div class="col-sm-12">
+    <p class="lead">
+      la réductibilité d’un état est la première recherche à effectuer sur un
+      état de nœud. un état est réductible s’il peut perdre un croisement ou
+      plus à la suite d’un mouvement de brin. l’état est réduit lorsqu’il ne
+      peut plus perdre de croisements.
+    </p>
+    <p>
+      une réduction peut être <i>patente</i>, ou <i>latente</i> : elle ne
+      deviendra patente qu’après une suite de métamorphoses. un signe
+      infaillible de réductibilité est la présence d’un
+      <i>arc de portée trop longue</i> ou d'une suite trop longue d'arcs
+      consécutifs de <span class="math">portée<sub>0</sub></span
+      >>, comme nous l'indique la remarque ci-après. <br />on remarquera, dans
+      un état non alterné, la corrélation entre les arcs de
+      <span class="math">portée<sub>&#123;≥2&#125;</sub></span> et les suites
+      d'arcs consécutifs de <span class="math">portée<sub>0</sub></span> : à
+      chaque arc de <span class="math">portée<sub>2</sub></span
+      >, il correspond un arc de <span class="math">portée<sub>0</sub></span
+      >. il y a donc autant d'arcs de
+      <span class="math">portée<sub>2</sub></span> que d'arcs de
+      <span class="math">portée<sub>0</sub></span> dans un état non alterné
+      quelconque. en effet, un arc de
+      <span class="math">portée<sub>0</sub></span> un arc de
+      <span class="math">portée<sub>2</sub></span> vu de l'autre côté, et
+      réciproquement. une suite de deux arcs consécutifs de
+      <span class="math">portée<sub>0</sub></span> correspond à un arc de
+      <span class="math"> portée<sub>3</sub></span> vu aussi de l' autre côté,
+      et réciproquement aussi, comme le montrent les dessins ci-dessous, etc..
+    </p>
+
+    <figure class="text-center my-3 imgbg">
+      <img src="assets\SVG\reductibilite\portéebis.svg" alt="span" />
+    </figure>
+
+    <figure class="text-center float-end mx-5 img-hover-zoom overflow-visible">
+      <img
+        src="assets\SVG\reductibilite\portance.svg"
+        style="width: 20rem"
+        class="imgbg"
+        alt="span"
+      />
+    </figure>
+    <p>
+      nous disons qu'il y a un équilibre congruent entre arcs de
+      <span class="math">portée<sub>&#123;p ≥ 2&#125; </sub></span> et suites de
+      <span class="math">(p - 1)</span>arcs de
+      <span class="math">portée<sub>0</sub></span> ; celles-ci sont en miroir à
+      leurs arcs, ce que les antiparticules sont à leurs particules. ce que nous
+      dessinons, comme un processus d'annihilation dans nos dessins, les valeurs
+      x et y sont les valeurs des portées résultant de l'annihilation des
+      arcs-longs et de leurs antiarcs. <br />
+      <span class="text-decoration-underline"
+        >a- ligne supérieure des dessins :</span
+      >
+      l'arc de <span class="math">portée<sub>2</sub></span> et son antiarc de
+      <span class="math">portée<sub>0</sub></span> forment une lunule non
+      alternée et donc annulable, ce qui se traduit par une torsade localement
+      nulle. le comptage des portées pour ce motif s'effectue comme suit : en b
+      et b' les portées non visibles, avant annihilation, sont respectivement b
+      et b' . la portance de la portion de brin bb vaut donc, avant
+      annihilation,
+      <span class="math"
+        >p<sub>&#123;bb'&#125;</sub> = b + 0 + b' = b + b' = x"</span
+      >. la portée de l'arc-long aa, avant annihilation, vaut
+      <span class="math">p<sub>2</sub> = 2</span>. après annulation de la
+      lunule, cette portée passe à 0. au total, avant annihilation nous avions
+      <span class="math"
+        >P<sub>&#123;init&#125;</sub> = 2 + b + b' = 2 + x"</span
+      >, et après l'annulation de la lunule, nous obtenons
+      <span class="math"
+        >P<sub>&#123;fin&#125;</sub> = b + b' = p<sub>&#123;bb'&#125;</sub> =
+        x"</span
+      >. <br />
+      <span class="text-decoration-underline">
+        b- ligne inférieure des dessins : </span
+      >l'arc de <span class="math">portée<sub>3</sub></span> et son antiarc
+      forment de même une lunule non alternée
+      <small class="text-muted"
+        >indirecte, celle-ci, car traversée par une portion de brin étrangère à
+        la lunule</small
+      >
+      et donc aussi annulable. pour ce motif à l'arc-long de
+      <span class="math">portée<sub>3</sub></span
+      >, le calcul donne : avant annihilation
+      <span class="math"
+        >P<sub>&#123;bb'&#125;</sub> = b + 0 + 0 + b' = b + b"</span
+      >
+      , que nous notons <span class="math">x + y</span>, et donc
+      <span class="math">P<sub></sub>>&#123;init&#125; = 3 + x + y</span>. après
+      l'annulation de la lunule, la portée de l'arc-long passe de 3 à 1 ce qui
+      donne
+      <span class="math"
+        >P<sub></sub>>&#123;fin&#125; = b + b' + 1 = x + y + 1</span
+      >. l'état nœudien perd donc dans tous les cas deux croisements et sa
+      portance diminue d'autant.
+    </p>
+
+    <p>
+      mais allons un peu plus loin, et reprenons l'exemple de la portance de
+      l'état à un rond et 10 croisements ci-contre :
+      <span class="math">P = 0112102021</span>. cette portance se décrit ainsi,
+      à condition de ne pas tenir compte de l'ordre dans lequel se suivent les
+      arcs : 3 arcs de <span class="math">portée<sub>2</sub></span
+      >, 4 arcs de <span class="math">portée<sub>1</sub></span> et 3 arcs de
+      <span class="math">portée<sub>0</sub></span
+      >.
+      <figure class="img-hover-zoom overflow-visible ">
+        <img
+          src="assets\SVG\portance\noeud-arc.svg"
+          width="300"
+          style="float: right; padding: 1rem; margin: 1rem;"
+          class="imgbg"
+          alt="span"
+        />
+      </figure>
+      <br />
+      nous pourrions désigner cette portance par une formule succincte qui
+      ferait apparaître la quantité d'arcs de
+      <span class="math">portée<sub>m</sub></span
+      >, sorte de polynôme des portées
+      <span class="math">ṗ<sup>2</sup> = 3p<sup>2</sup> + 4p + 3</span>,
+      l'indice de ṗ indiquant la portée maximum, ou plus simplement
+      <span class="math">ṗ<sup>2</sup> = \&#123;3<sup>2</sup>43\&#125;</span>
+      voire même
+      <span class="math">ṗ<sup>2</sup> = \&#123;3<sup>2</sup>4\&#125;</span>
+      puisqu'il n'y a aucune ambiguïté, le nombre d'arcs de
+      <span class="math">portée<sub>0</sub></span> étant automatiquement égal au
+      nombre d'arcs de <span class="math">portée<sub>2</sub></span>
+      <small class="text-muted"> seulement il faut s'en souvenir!</small>. de
+      façon plus générale, on peut assigner à chaque état son polynôme des
+      portances :
+      <span class="math"
+        >ṗ<sub>m</sub> = a<sub>1</sub>p<sub>m</sub> + a<sub>2</sub>p<sub
+          >m-1</sub
+        >
+        + ... + a<sub>m</sub>p + a<sub></sub>1p<sub>0</sub></span
+      >
+      (<span class="math">a<sub>&#123;m+1&#125;</sub></span> valant en effet
+      <span class="math">a<sub>1</sub></span
+      >) ou son ensemble des coefficients
+      <span class="math"
+        >ṗ<sub>m</sub> = a<sub>1</sub>a<sub>2</sub>...a<sub>m</sub></span
+      >, le coefficient des arcs 0 étant sous-entendu car toujours égal à a1 et
+      la somme des coefficients égale au nombre d'arcs égal au nombre de
+      croisements de l'état : <span class="math">Σa<sub>i</sub> = C</span>.
+      <i
+        >en tout état de cause portance P et polynôme des portées Pp ne sont pas
+        strictement équivalents puisque la portance indique dans quel ordre se
+        succèdent les arcs ce qui n'est évidemment pas le cas du polynôme.</i
+      >
+    </p>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-9">
+      <h2 id="formule">la formule des portées</h2>
+      <p>
+        p154 du livre #pnr, nous trouvons le tableau qui permet de lire le
+        résultat suivant :
+        <span class="lead"
+          >il n'y a pas d'état réduit de nœud à R ronds présentant un arc de
+          portée p ayant moins de C croisements.</span
+        >
+        la portée maximum d’un arc notée
+        <span class="math">p<sub>m</sub></span
+        >, est donnée par la <mark>formule</mark> : <br />- quand
+        <span class="math">R ≤ p + 1</span>, alors
+        <span class="math">C ≥ 5&#215; p<sub>m</sub> − R − 1</span> <br />-
+        lorsque <span class="math">R ≥ p + 1</span>, la formule est
+        <span class="math">'C ≥ 2(p<sub>m</sub> + R − 2)</span>. <br /><small
+          class="text-muted">
+          voir la séquence complète d'élaboration de la formule dans #pnr --
+          arcs, ronds, croisements -- pp 140 à 154</small>
+      </p>
+
+      <p>
+        les deux formules sont équivalentes pour la série générique diagonale de
+        nœuds réduits avec <span class="math">R = p + 1</span>, et les deux
+        formules deviennent <span class="math">C ≥ 4p – 2</span>, soit la série
+        générique de raison arithmétique 4, pour p = 1 à l'∞ : C = 2 (le simple
+        "enlacement" à 2 ronds, seul de son espèce), 6 (tous les 3 ronds,
+        borroméen, maja, etc.), 10 (à 4 ronds), 14 (à 5 ronds), etc.
+        <small class="text-muted"
+          >voir le livre pnr et ci-après
+          <a [routerLink]="['/tableno']" fragment="commentsuc">
+            générer les nœuds /commentaires succincts
+          </a></small
+        >
+        . le plus petit nœud, en nombre de croisements, est l' enlacement à 2
+        ronds et 2 croisements; la formule donne
+        <span class="math">p<sub>m</sub> = 1</span>, soit :
+        <span class="math">2 ≥ 5&#215;1 - 2 - 1</span>. le plus petit nœud en
+        nombre de ronds est le trèfle à un rond et 3 croisements; la formule
+        donne <span class="math">p<sub>m</sub> = 1</span> soit :
+        <span class="math">3 ≥ 5&#215;1 - 1 - 1</span>. le plus petit nœud à un
+        rond ayant un arc de portée 2 est un nœud à 8 croisements :
+        <span class="math">'8 ≥ 5&#215;2 - 1 - 1</span>. etc...
+      </p>
+
+      <figure class="text-center ">
+        <img
+          src="assets\SVG\reductibilite\tableaup154.svg"
+          class="figure-img img-fluid rounded"
+          alt="tableau des portées"
+        />
+        <figcaption>tableau des portées</figcaption>
+      </figure>
+      <span class="lead">
+        désormais, chaque fois que nous parlerons d'état, sans plus de
+        précision, il s'agira d'un état réduit.
+      </span>
+    </div>
+    <div class="col-sm-3 d-flex flex-column-reverse">
+      <div class="card my-3 ">
+        <img
+          src="assets\SVG\reductibilite\colliers2.svg"
+          style="width: 20rem"
+          class="card-img-top imgbg"
+          alt="span"
+        />
+        <div class="card-body">
+          <span > production des séries des plus petits noeuds à R ronds ayant un état
+          présentant un arc de portée <i>p</i>, avec R> <i>p</i>+1</span>
+        </div>
+      </div>
+      <figure class="my-3 ">
+        <img src="assets\SVG\reductibilite\colliers.svg"
+        style="width: 20rem"
+        class="imgbg"
+        alt="span"
+         />
+        <figcaption>
+          série des colliers alternés et série des plus petits noeuds à R ronds
+          (R>2) ayant un arc de <span class="math">portée<sub>2</sub></span>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</div>

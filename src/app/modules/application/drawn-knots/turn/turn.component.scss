@@ -1,0 +1,73 @@
+
+h1 {
+  background-color: rgb(138, 25, 10);
+  border-radius: 1em;
+  }
+  h2  {
+  background-color: rgba(138, 25, 10, 0.527);
+    color:white;
+    text-align: center;
+    font-size: large;
+    border-radius: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+  }
+    .wrapingimage
+  {
+  float: right;
+  margin: 5px 5px 3px 4px;
+
+  }
+  .wrapingimageleft
+  {
+  float: left;
+  margin: 5px 5px 3px 4px;
+
+  }
+
+  p {
+    text-indent: -2em;
+    margin-left: 2em;
+    margin-right: 2em;
+    text-align: justify;
+  }
+  nav {
+    border-radius: 1em;
+    background-color: darkorchid;
+  }
+  img {
+
+     border-radius: 0.5em;
+   }
+
+   figure {
+     border-radius: 1em;
+     margin: 1em;
+     border: solid 1px ;
+     color:  rgb(26, 3, 3);
+     text-align: center;
+     background-color: rgb(223, 206, 174);
+
+   }
+   .img-hover-zoom {
+    overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+  }
+
+  /* [2] Transition property for smooth transformation of images */
+  .img-hover-zoom img {
+    transition: transform .5s ease;
+  }
+
+  /* [3] Finally, transforming the image when container gets hovered */
+  .img-hover-zoom:hover img {
+    transform: scale(1.5);
+  }
+.math {
+  font-family: monospace;
+  background-color: aquamarine;
+  color: rgb(1, 14, 1);
+}
+.imgbg {
+  background-color: aqua;
+}

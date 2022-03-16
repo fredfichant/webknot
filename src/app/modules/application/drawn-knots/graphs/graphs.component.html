@@ -1,0 +1,267 @@
+<h1 class="fs-2 text-center">
+  dessiner des amas<span class="badge bg-secondary mx-3 my-3">graphes</span>
+</h1>
+<div class="row">
+  <div class="col-sm-9">
+    <p class="lead text-center">
+      un graphe est composé de sommets et d'arêtes. il délimite des faces.
+    </p>
+    <p>
+      les graphes des nœuds qu'utilise la plastique nœudienne sont des graphes
+      dont tous les sommets sont à l'intersection d' au moins deux arêtes. pour
+      cela nous les nommons graphes fermés. de plus, l'ensemble des graphes
+      nœudiens commence au graphe à 2 sommets et 2 arêtes car il correspond au
+      plus petit nœud à minimum d'arêtes.
+    </p>
+    <div class="d-flex flex-row justify-content-center">
+      <div>
+        <p>un croisement dessine quatre quadrants.</p>
+        <ul>
+          <li>
+            deux quadrants qui ont une portion de brin commune sont adjacents.
+          </li>
+          <li>deux quadrants non adjacents sont connexes.</li>
+        </ul>
+        <p>sur l'exemple, a est adjacent à b et d ; et connexe à c.</p>
+      </div>
+
+      <div>
+        <img src="assets\SVG\graphes\croisement1.svg"
+        class="imgbg"/>
+      </div>
+    </div>
+    <p>
+      un état d'un nœud parcellise en zones le plan sur lequel il est tracé. un
+      croisement participe à quatre faces et chaque quadrant n'appartient qu'à
+      une seule. deux quadrants adjacents appartiennent à deux faces qui seront
+      dites adjacentes et de même, deux quadrants connexes appartiennent à deux
+      faces dites connexes.
+    </p>
+  </div>
+  <div class="col-sm-3">
+    <figure>
+      <app-animation6></app-animation6>
+      <figcaption>
+        tracé d'un graphe d'adjacence sur l'état. la ligne pointillée est un bug
+        de l'animation non encore résolu
+      </figcaption>
+    </figure>
+  </div>
+</div>
+<div class="row">
+    <div class="col-sm-12">
+    <h2>graphe d'adjacence</h2>
+    <p>
+      dans une face quelconque d'un état d'un nœud (voir dessins ci-après), nous
+      commençons par placer un sommet puis, nous plaçons des sommets dans toutes
+      les faces adjacentes à celle que nous venons de marquer. après quoi nous
+      traçons entre chaque sommet une arête qui recoupe chaque portion de rond
+      commune aux faces adjacentes. nous répétons la procédure jusqu'à ce que
+      chaque portion de rond soit marquée une fois par une arête. comme on le
+      voit, le graphe d'adjacence organise l'espace en cellules quadrangulaires,
+      chaque cellule contenant un croisement.
+    </p>
+    <div class="text-center">
+      <img src="assets\SVG\graphes\adjacence.svg"
+      class="img-fluid imgbg" />
+    </div>
+    <h2>graphe de connexité - graphe orné</h2>
+    <p>
+      dans une face quelconque d'un état d'un nœud, nous commençons par placer
+      un sommet puis, nous plaçons des sommets dans toutes les faces connexes à
+      celle que nous venons de marquer. après quoi nous traçons entre chaque
+      sommet une arête qui recoupe chaque croisement commun aux faces connexes.
+      nous répétons la procédure jusqu'à ce que chaque croisement soit marqué
+      une fois par une arête.
+    </p>
+    <div class="text-center">
+      <img src="assets\SVG\graphes\grapheconnexité.svg"
+      class="img-fluid imgbg" />
+    </div>
+    <h3>ornement</h3>
+    <p>
+      deux croisements consécutifs alternés ont la même ornure. deux croisements
+      consécutifs non-alternés ont des ornures opposées.
+    </p>
+    <div class="d-flex justify-content-center">
+      <figure class="w-75 img-fluid text-center imgbg">
+        <img src="assets\SVG\graphes\ornure1.svg" style="width: 20rem" />
+        <figcaption>ornure</figcaption>
+      </figure>
+    </div>
+    <p>
+      nous déterminons l'ornure de chacun des croisements d'un état en écrivant
+      d'abord la lettre <b>ω</b> ou
+      <b>ώ</b>
+      (<small class="text-muted"
+        >il n'y a pas, contrairement aux mathématiques de la théorie des nœuds,
+        de standard d'attribution, voir plus loin #petite étude...</small
+      >
+      . ) auprès de l'un d'eux choisi arbitrairement. puis, à chacun des
+      croisements qui lui sont consécutifs, nous écrivons une lettre : <br />•
+      si le croisement consécutif était précédemment orné ω alors ω s'il y a
+      alternance, sinon ώ s'il y a non-alternance; <br />• si le croisement
+      consécutif était précédemment orné ώ alors ώ s'il y a alternance, sinon ω
+      s'il y a non-alternance. <br />l'ornure répartit ainsi les croisements
+      d'un état en deux collections. nous appelons <mark>ornement</mark> cette
+      assignation.
+    </p>
+    <div class="text-center">
+      <img src="assets\SVG\graphes\ornure2.svg" class="img-fluid imgbg" />
+    </div>
+    <p>
+      par construction, le graphe de connexité est donc une image univoque de
+      l'état et contient en conséquence toutes les informations des croisements
+      (voir plus loin #graphes ornés). <br />
+      à ce stade, peu nous chaut que l'état soit dans l'ombre ou orné, le graphe
+      étant dessiné dans l'ombre; par suite, un graphe orné uniformément ou sans
+      marque des deux ornures est un graphe d'un état d'un nœud alterné.
+    </p>
+    <h2>reconstitution de l'état à partir du graphe de connexité</h2>
+    <p>
+      nous livrons une séquence qui permet de comprendre le processus "à
+      l'envers" de reconstitution d'un état nœudien à partir de son graphe de
+      connexité. (voir plus bas #graphes ornés). <br />nous partons du graphe de
+      connexité orné à gauche et sur chacune de ses arêtes nous superposons un
+      croisement qui se partage ainsi sur deux zones connexes du graphe et offre
+      ainsi deux pattes par zone. lorsqu'il s'agit de deux arêtes en faisceau
+      les deux croisements forment immédiatement une torsade double, une lunule
+      (une ganse dans le cas de trois croisements en faisceau). puis dans chaque
+      zone du graphe nous raboutons de la façon la plus naturelle les pattes
+      entre elles : chaque patte se raboute à la patte immédiatement adjacente.
+      nous pouvons ensuite extraire l'état obtenu et l'esthétiser. on remarque
+      bien qu'ainsi il est très facile d'extraire un nœud trivial puisqu'il n'y
+      a pas à se soucier de l'ornure.
+    </p>
+    <img src="assets\SVG\graphes\grafreconst.svg"
+    class="imgbg"
+    alt="graph"
+    />
+    <h2>pliage</h2>
+    <figure>
+      <img src="assets\SVG\graphes\pliage.svg" style="width: 80%" />
+      <figcaption>pliage de l'état</figcaption>
+    </figure>
+    <p>
+      lorsqu'on dessine un graphe, on peut le considérer comme un flexible,
+      c'est-à-dire que les sommets, et avec eux les arêtes, sont articulables.
+      il est donc loisible de considérer que chaque zone n'est ni intérieure ni
+      extérieure. ainsi, chaque zone du graphe peut recevoir par pliage tout ou
+      partie du graphe. chaque pliage correspond à une opération correspondante
+      de l'état nœudien. <br />nous avons vu comment restituer, dessiner, l'état
+      à partir du graphe (voir plus haut #graphes ornés) . l'état change donc de
+      présentation mais ce changement de présentation n'a pas été obtenu comme
+      expliqué au § #changement de présentation par un tour autour de la sphère
+      (au moins pas directement). l'état est le même, mais il est vu différent.
+      on peut considérer le graphe, l'état, comme un "rubicube", qui "roulerait"
+      sur lui même par les glissements successifs des brins, mais les faces et
+      les petits cubes du "rubicube" seraient remplacées par les brins et les
+      zones de l'état.
+    </p>
+    <h2>chiffrage du graphe</h2>
+    <figure>
+      <img src="assets\SVG\graphes\grafecolore.svg" style="width: 90%" />
+    </figure>
+    <p>
+      suivi des métamorphoses à travers le cheminement des arêtes (chiffrées ou
+      colorées, etc.) dans l'amas. chaque arête est dotée d'une couleur
+      (chiffrage, etc.) qui permet de la suivre dans l'ensemble de l'amas au fur
+      et à mesure des métamorphoses.
+    </p>
+    <h2>voir et dessiner un nœud premier</h2>
+    <img src="assets\SVG\graphes\noeudprem.svg"
+    class="imgbg"
+    alt="prime knot"/>
+    <p>
+      un graphe de connexité d'un nœud non premier peut être décomposé en deux
+      sous-graphes de connexité par scission d'un seul de ses sommets.
+    </p>
+    <p>
+      l'exemple proposé (voir plus haut #normalisation, la séquence opératoire)
+      est un nœud à sept croisements avec un arc de portée 2 et semble
+      contredire la formule
+      <span class="math">C ≥ 5&#215;pm − R − 1</span>" qui devient dans cet
+      exemple <span class="math">7 ≥ 5&#215;2 - 1 - 1</span>"; mais, ce
+      n'est pas un nœud premier. lorsqu'on a affaire à un nœud non premier qui
+      semble, comme notre exemple, contredire la formule, il est loisible, en
+      effectuant les métamorphoses, de trouver l'état conforme à la formule
+      (voir ci-dessus les dessins du § #normalisation). la formule répond donc
+      bien encore à la somme de deux états premiers formant un nœud non premier
+      une fois toutes les métamorphoses effectuées. c'est ce que nous appelons
+      la normalisation d'un état non premier. la formule ayant indiqué des arcs
+      trop longs nous invite à les réduire. néanmoins, la plastique nœudienne
+      délaisse les nœuds non premiers, un peu comme l'arithmétique théorique qui
+      s'intéresse de manière privilégiée aux nombres premiers comme ossature de
+      la théorie des nombres
+    </p>
+    <h2>graphe dual - états duaux</h2>
+    <figure class="img-hover-zoom">
+      <img src="assets\SVG\graphes\duaux.svg" class="card-img-top" />
+      <figcaption>paire de graphes duaux</figcaption>
+    </figure>
+    <ul>
+      <li>
+        1. -- deux états ayant même paire de graphes duaux ornés semblablement
+        sont identiques.
+      </li>
+      <li>
+        2. -- deux états n'ayant pas même paire de graphes duaux, ou n'étant pas
+        ornés semblablement sont différents.
+      </li>
+      <li>
+        chaque graphe de connexité reçoit dans ses zones les sommets du graphe
+        dual.
+      </li>
+    </ul>
+    <p>
+      lorsqu'on assemble les deux graphes duaux, deux arêtes qui se croisent
+      représentent la même arête vue dualement. lorsqu'une arête est d'une
+      ornure sur un graphe, la même arête est d'ornure opposée sur l'autre
+      graphe. <br />les deux graphes de connexités forment une
+      <mark>bipartition</mark> du graphe d'adjacence.
+    </p>
+    <h2>changement de présentation</h2>
+    <p>
+      un état peut se présenter de plusieurs façons
+      <small class="text-muted"
+        >même une infinité! mais comme nous ne sommes pas géomètres, nous ne
+        retenons que les présentations "à fil tendu"</small
+      >). une sphère dessinée à toujours l'air d'un disque, on ne voit qu'un
+      hémisphère. projetons-y le dessin d'un état. faisons ensuite glisser une
+      portion de rond sur l'hémisphère caché jusqu'à ce qu'elle revienne sur
+      l'hémisphère visible. nous obtenons ainsi deux présentations du même état
+      qui ont la même paire duale de #graphes de connexité ornés et le même
+      #graphe d'adjacence. de plus, le changement de présentation n'a aucune
+      incidence sur la portance, contrairement aux métamorphoses et mutations.
+    </p>
+    <div class="text-center">
+      <img
+        src="assets\SVG\accplast\présentation.svg"
+        class="img-fluid imgbg"
+        alt="changement de présentation"
+      />
+    </div>
+    <div class="text-center">
+      <img
+        src="assets\SVG\accplast\présentation2.ai.svg"
+        class="img-fluid imgbg"
+        alt="changement de présentation"
+      />
+    </div>
+    <h2>graphes autoduaux</h2>
+    <p>
+      par le dessin de la bipartition, on constate que chaque élément de la
+      paire de graphes de connexité est identique à son dual.
+    </p>
+    <img src="assets\SVG\graphes\autoduaux.svg"
+    class="imgbg"
+    alt="autoduaux"
+    />
+    <p>
+      les états autoduaux sont à la "charnière" de certains amas et le partagent
+      en deux "volets" duaux. <br />ci-dessus une liste de métaboles autoduales
+      <small class="text-muted">execice : complétez la</small>
+    </p>
+  </div>
+
+</div>

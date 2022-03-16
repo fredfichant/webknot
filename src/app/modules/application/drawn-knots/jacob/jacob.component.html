@@ -1,0 +1,77 @@
+<h1 class="fs-2 text-center">
+  constructions nœudiennes<span class="badge bg-secondary mx-3 my-3"
+    >l’échelle de jacob</span
+  >
+</h1>
+<div class="row">
+  <div class="col-sm-9">
+    <p>
+      l’échelle de jacob permet de passer d’un état η à un autre ή qui lui est
+      “consubstantiel” : parce que, tout d’abord on passera par la surface
+      supplémentaire de l’état η dont on ne prendra que le ou les bord(s)
+      formant ainsi le nouvel état ή. ce nouvel état est donc bien
+      “organiquement” lié à l’état de départ. si deux états appartiennent à un
+      même métabole, ils ont même ombre, même parure mais pas même ornure. ce
+      fait entraîne que la trace des deux états est différente sur leur surface
+      supplémentaire respective qui seront donc nécessairement différentes, ce
+      qui entraînera aussi, par voie de conséquence, la distinction des échelles
+      de jacob correspondantes et donc de l’infinité des états les parcourant.
+      la procédure est celle-ci :
+    </p>
+
+    <ol type="1">
+      <li>on dessine un état quelconque.</li>
+      <li>
+        considérant chaque zone de l’état comme une plaque solide à deux faces
+        transparentes, on dessine deux sommets un pour la face dessus (un petit
+        rond “plein”, par exemple) un pour la face dessous (un petit rond
+        “vide”, par exemple).
+      </li>
+      <li>
+        on va relier le sommet dessus d’une face au sommet dessous de la face
+        qui lui est contiguë par connexité, c’est-à-dire de l’autre côté du
+        croisement commun; pour cela on tirera un arc partant du sommet dessus,
+        traversant sa portion de brin fictivement sectionnée appartenant au
+        croisement commun, passant “rapidement” sur la zone adjacente
+        simultanément aux deux faces connexes. cela, vu par dessus, en gras ou
+        en trait plein. abordant la face dont le sommet dessous est à relier,
+        l’arc sera dessiné en trait fin ou pointillé jusque au sommet dessous.
+      </li>
+      <li>
+        on répètera cette opération jusqu’à ce que tous les sommets soient
+        reliés entre eux, alternativement dessus-dessous, et forment un graphe
+        fermé (chaque sommet est relié à au moins deux autres respectant
+        l’alternance dessus-dessous).
+      </li>
+      <li>
+        le graphe ainsi obtenu est “retiré” de l’état et “mis en forme”
+        c’est-à-dire que l’on fera glisser les arcs de sorte à minimiser le
+        nombre des croisements du graphe.
+      </li>
+      <li>
+        cela fait, on “gonflera” le graphe comme une chambre à air, ce qui
+        remplacera les arêtes du graphe en “tube”
+      </li>
+      <li>
+        on efface les sommets explicites, ce qui a pour effet de transformer le
+        graphe en une surface multi-tubulaire. ceci constitue la surface
+        supplémentaire de l’état de départ.
+      </li>
+      <li>
+        les “bords” de cette surface, dont on minimise le nombre des
+        croisements, comme en (5°) ci-dessus, vont dessiner le noeud de jacob,
+        relatif à l’échelon immédiatement supérieur dans l’échelle de jacob, de
+        l’état de départ.
+      </li>
+      <li>on peut itérer cette procédure ad infinitum.</li>
+    </ol>
+    <div class="img-hover-zoom">
+      <img src="assets\SVG\jacob2.svg" class="img-fluid" />
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="img-hover-zoom">
+      <img src="assets\SVG\jacob1.svg" class="img-fluid" />
+    </div>
+  </div>
+</div>

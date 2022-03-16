@@ -1,0 +1,48 @@
+
+
+ p {
+  text-align: justify;
+ text-indent: -3em;
+ margin-left: 4em;
+ margin-right: 3em;
+}
+table {
+ margin-left: 1em;
+ border-collapse : collapse;
+}
+
+td {
+  font-size: small;
+
+}
+
+
+
+.physique {
+ color: blue;
+}
+.math {
+ color: rgb(3, 101, 114);
+
+}
+.cyber {
+ color: darkorchid;
+
+}
+.psy {
+ color: goldenrod;
+}
+.econo {
+ color: firebrick;
+}
+.ling {
+ color: green;
+}
+.sex {
+ color:red
+}
+thead{
+  background: rgb(28, 31, 34);
+  color:white
+  ;
+}

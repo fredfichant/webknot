@@ -1,0 +1,81 @@
+<h1 class=" fs-2 text-center"><img src="assets\ICON\pencil.svg" style="width: 2em ">dessiner des amas<span
+  class="badge bg-secondary mx-3 my-3">formule particulaire</span></h1>
+<div class="row">
+<div class="col-sm-12">
+  <h2>formule particulaire</h2>
+  <p class='lead'>
+      la formule particulaire permet de représenter les motifs de métamorphose d'un état métamorphosable, à la
+      façon des chimistes.</p>
+  <p>à partir du graphe orné, nous assignons une lettre à chaque type de motif métamorphosable,
+      en tenant compte de plus du fait qu'un motif de métamorphose peut apparaître sur le graphe comme motif
+      sommet,
+      en indice "s", ou motif face, en indice "f" :</p>
+  <ul>
+      <li> k pour le coin : k<sub>s</sub> et k<sub>f</sub></li>
+      <li> a pour l'agrafe : a<sub>s</sub> et a<sub>f</sub></li>
+      <li> p pour la permutation : p<sub>s</sub> et p<sub>f</sub> etc...</li>
+  </ul>
+  <figure>
+      <img src="assets\SVG\formule\formuleP.svg"
+      class="imgbg">
+      <figcaption>extraction de la formule particulaire et matrice d'incidence</figcaption>
+  </figure>
+  <p>la formule particulaire est une formule "chimique" de <i>superposition</i> des motifs de métamorphoses,
+      "superposition" étant entendu ici à la "<em>schrödinger</em>" : deux motifs s'inhibent l'un l'autre s'ils ont des croisements communs, au moins un.
+      <br>la formule particulaire représentera ces arêtes communes aux différents motifs par autant de traits reliant les motifs qu'ils ont d'arêtes en commun.
+      on peut la représenter aussi sous forme d'une matrice d'incidence.
+      <br>il y a <i>indétermination</i> de la métamorphose active et donc <b>juxtaposition</b> des deux états.
+      en pratique, on dessinera arbitrairement un état puis l'autre (dessins????).
+      <br>sur les graphes de connexités ornés cela se montrera par des arêtes communes.
+      chacun des motifs représentant un montage topologique <b>bâti + motif </b>  <i>spécifique</i>.
+      deux états ne s'inhibant pas, sont dits <i>simplement </i>  <b>additifs</b> : les métamorphoses peuvent s'effectuer <i>simultanément</i>.
+  </p>
+  <p>appliquons ce que nous venons de dire à nos schémas ci-dessus :
+      nous tirons du dessin de l'état un graphe de connexité orné.
+      puisque le graphe de connexité est une image <b><i>exacte </i></b>de l'état, les arêtes du graphe représentent les croisements de l'état avec leurs ornures, les sommets et les faces représentent les zones flexibles de l'état.
+      les motifs de métamorphoses sont donc intégralement représentés dans le graphe.
+      dans l'exemple, il y a quatre motifs, tous des retournements de coins, trois coins retournables <i>sommets</i> et un coin retournable <i>face</i>.
+      les trois coins retournables "sommets" sont désignés par les symboles k<sub>s1</sub>, k<sub>s2</sub> et k<sub>s3</sub>, le coin "face" est désigné par k<sub>f</sub>.
+      la formule particulaire montre donc, d'un seul coup d'oeil, la simultanéité ou non des métamorphoses : k<sub>s1</sub>, k<sub>s2</sub> et k<sub>f</sub> sont chacun inhibant pour les deux autres,
+      c'est la loi du  <b>OU EXCLUSIF : OU k<sub>s1</sub> SEUL OU k<sub>s2</sub> SEUL OU k<sub>f</sub> SEUL </b>accompagné éventuellement ("additif") par k<sub>s3</sub>.
+      cette "grappe" de trois motifs est <b>additive</b> avec le motif k<sub>s3</sub>; en effet, ce motif peut s'effectuer simultanément avec un seul quelconque des trois autres.
+      quatre motifs, trois possibilités seulement d'effectuation de deux motifs ensemble.
+      voir #chemins dans l'amas.</p>
+  <figure>
+      <img src="assets\SVG\formule\formuleP2.svg"
+      class="imgbg">
+      <figcaption>4 motifs</figcaption>
+
+  </figure>
+
+  <p>la superposition des motifs entraîne de plus la non commutativité des métamorphoses;
+      en effet, lorsqu'une métamorphose d'une telle "grappe" est effectuée, le reste des métamorphoses de la "grappe" est "perdu".
+      la "succession" de motifs nœudiens superposés n'a aucun sens car ne possédant aucune réalité "physique";
+      la non commutativité est donc effet de la superposition.
+      <br>soient les deux métamorphoses superposées m1 et m2, si l'on veut effectuer m2 après m1 il faut involuer m1 pour réobtenir l'état de départ puis effectuer m2;            m1 ayant été effectuée m2 a été "perdue", de l'état obtenu après métamorphose m1 il faut effectuer m1~ ce
+      qui nous ramène à l'état de départ et effectuer finalement m2.
+      on peut écrire la succession des événements ainsi : ηinitial, m1 OU m2, si m1, m1(ηinitial) = η1 puis m1~(η1) = ηinitial puis m2(ηinitial) = η2.
+      voici une monstration simple du fait (dessins)
+      <br>exercice: choisissez un état de nœud non alterné, repérez ses motifs de métamophoses, puis dessinez les
+      états obtenus.</p>
+
+  <h2>filmer les métamorphoses</h2>
+
+  <p> nous décomposons, image par image, le retournement du coin. </p>
+  <figure>
+      <img src="assets\SVG\formule\grafemetafilm.svg"
+      class="imgbg">
+      <figcaption>images du film</figcaption>
+  </figure>
+  <p>à partir d'un graphe de connexité complet, nous détachons le motif de métamorphose, le coin retournable k , de son bâti spécifique b<sub>k</sub>.
+      à ce stade, nous pouvons donc écrire η = b<sub>k</sub> + k (voir plus haut : i : dessiner un amas..., – (5°)).
+      la suite des opérations s'effectue ainsi :
+      <br>nous séparons b<sub>k</sub> et k ; le bâti b<sub>k</sub> est invariant par retournement, nous effectuons le retournement du coin ce qui nous fournit k~ que nous raccrochons au bâti b<sub>k</sub> ,
+      opération qui nous fournit η~ = b<sub>k</sub> + k~ , où "+" est la soudure topologique.
+      le déroulement des opérations se schématise donc ainsi :<br>
+      <span class="math">η = b<sub>k</sub> + k , (2) η − k = b<sub>k</sub> , (3) ret(k) = k~ , (4) k~ + b<sub>k</sub> = η~.</span>
+      <br>nous pouvons encore symboliser cette suite opératoire, en utilisant le différentiel
+      <span class="math">δk~,k = k~ − k : η~ = η + δk~,k</span> .
+      <br>le différentiel étant relatif à la métamorphose d'état, n'est pas commutable : δk~,k "vu" de l'état η est différent de δk,k~ "vu" de η~.
+      nous étudions cela plus en détail dans "transitions nœudiennes".
+  </p>

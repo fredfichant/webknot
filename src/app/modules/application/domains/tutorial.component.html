@@ -1,0 +1,111 @@
+<div class="container bd-layout">
+  <div class="bd-sidebar">
+    <ul class="list-unstyled p-2">
+      <li class="mb-1">
+        <button
+          class="btn btn-toggle align-items-center rounded collapsed"
+          data-bs-toggle="collapse"
+          data-bs-target="#reactive-collapse"
+          aria-expanded="false"
+          aria-current="true"
+        >
+          why knots
+        </button>
+        <div class="collapse show" id="reactive-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li>
+              <a routerLink="/domains/knotpast" class="link-dark rounded"
+                >knot past</a
+              >
+            </li>
+            <li>
+              <a routerLink="/domains/invitation" class="link-dark rounded"
+                >invitation</a
+              >
+            </li>
+            <li>
+              <a routerLink="/domains/knotfutur" class="link-dark rounded"
+                >knot futur</a
+              >
+            </li>
+            <li>
+              <a routerLink="/domains/knotnow" class="link-dark rounded"
+                >knot now</a
+              >
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="mb-1">
+        <button
+          class="btn btn-toggle align-items-center rounded collapsed"
+          data-bs-toggle="collapse"
+          data-bs-target="#template-collapse"
+          aria-expanded="false"
+        >
+          women worker
+        </button>
+        <div class="collapse show" id="template-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li>
+              <a routerLink="/domains/chromo" class="link-dark rounded"
+                >chromodynamic plastic</a
+              >
+            </li>
+            <li>
+              <a routerLink="/domains/doctrines" class="link-dark rounded"
+                >docrines et résidus</a
+              >
+            </li>
+            <li>
+              <a routerLink="/domains/clitorne" class="link-dark rounded"
+                >la dame à la clitorne</a
+              >
+            </li>
+            <li>
+              <a routerLink="/domains/histoire" class="link-dark rounded"
+                >malheurs de l'histoire</a
+              >
+            </li>
+            <li>
+              <a routerLink="/domains/horde" class="link-dark rounded"
+                >horde et ordre</a
+              >
+            </li>
+            <li>
+              <a routerLink="/domains/motions" class="link-dark rounded">
+                motions économiques et motions sexuelles</a
+              >
+            </li>
+            <li>
+              <a routerLink="/domains/internationale" class="link-dark rounded"
+                >internationnalité française</a
+              >
+            </li>
+            <li>
+              <a routerLink="/domains/intersexuelle" class="link-dark rounded"
+                >révolution intersexuelle de la paresse</a
+              >
+            </li>
+            <li>
+              <a routerLink="/domains/corps" class="link-dark rounded"
+                >mon corps est mon corps</a
+              >
+            </li>
+            <li>
+              <a routerLink="/domains/lessons" class="link-dark rounded"
+                >12 courtes leçons modernes sur le capitalisme</a
+              >
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="row">
+    <div class="col p-4">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

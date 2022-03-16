@@ -1,0 +1,130 @@
+<h1 class="fs-2 text-center text-warning">
+  <img src="assets\ICON\pencil.svg" style="width: 2em" />dessiner des amas<span
+    class="badge bg-secondary mx-3 my-3"
+    >équation d'état</span
+  >
+</h1>
+<div class="row">
+  <div class="col-sm-12">
+    <h2>graphes ornés parés, équation d'état</h2>
+    <p>
+      lorsqu'on a orné et paré tous les croisements de l'état, chaque croisement
+      se trouve ainsi doté de deux valeurs; une d' <b>ornure</b>, ω ou ώ de
+      famille <b>Ω = ω, ώ,</b> et une de <i>parure</i> , s ou s' de famille
+      <i>S = s, s'</i> . la composition de ces valeurs détermine deux (et non
+      pas quatre!) valeurs de la tournure des croisements : <br />
+      t = ωs = ώs', et t' = ωs' = ώs. <br />ces valeurs étant corrélées, nous
+      pouvons écrire ces trois paramètres fondamentaux de l'état en les accolant
+      : <br />tωs = tώs' et t'ωs' = t'ώs. <br />
+      on pourra donc écrire de façon équivalente : <br /><b>ω = ts = t's'</b> et
+      <b>ώ = t's = ts'</b> , ainsi que <b>s = tω = t'ώ</b> et
+      <b>s' = t'ω = tώ</b>. <br />a- on remarquera que lorsque deux valeurs sont
+      primées différemment elles sont égales à une valeur primée, inversement,
+      lorsque deux valeurs sont primées identiquement elles sont égales à une
+      valeur non primée; <br />b- on observera de plus, que lorsqu'un seulement
+      des paramètres <b>Ω</b> ou <i>S</i> change la tournure change, lorsque ces
+      deux paramètres changent simultanément la tournure reste inchangée
+    </p>
+    <p>
+      on peut reporter toutes ces informations sur la paire de graphes duaux. à
+      partir de ce § nous ne travaillerons que sur un seul graphe de la paire
+      puisque la dualité joue le rôle de "reflet" et que toute pratique de l'un
+      est strictement identique à l'autre.
+    </p>
+    <h2>parure sur le graphe.</h2>
+    <figure class="img-hover-zoom overflow-visible">
+      <img src="assets\PNG\grafs.png" class="w-75 imgbg" />
+    </figure>
+    <p>
+      nous présentons notre propos sur les dessins de l'amas du 8<sub>21</sub>
+      nous dessinons la parure faufilante p' sur le graphe qui traverse, en
+      vert, les arêtes du graphe (l'autre parure la sinuante p suit, en rouge,
+      les arêtes du graphe). les arêtes du graphe ainsi paramétrées permettent
+      de déterminer un invariant d'amas :
+      <mark>différence de tournures ΔT</mark>. <br />nous construisons une table
+      carrée 2 x 2. les deux lignes reçoivent la parure p, ligne supérieure et
+      p', ligne inférieure. les deux colonnes reçoivent l'ornure ω, colonne de
+      gauche, et ώ, colonne de droite.
+    </p>
+    <p class="lead">cette table ainsi servie est la table d'état de l'état.</p>
+    <p>
+      nous notons a<sub>ij</sub>, i et j = 1,2 les éléments de la table, "i"
+      pour les lignes et "j" pour les colonnes. alors a<sub>1j</sub> sont de
+      parure p et a<sub>2j</sub> de parure p'; a<sub>i1</sub> sont d'ornure ω et
+      a<sub>i2</sub> d'ornure ώ. <br />nous avons vu précédemment les
+      combinaisons qui donnaient les deux tournures t et t'. dans la table, la
+      tournure t est la somme des éléments de la diagonale
+      <span class="math"
+        >T = Σm<sub>&#123;ij&#125;</sub>a<sub>&#123;ij&#125;</sub></span
+      >
+      avec i = j; l'autre diagonale donne la tournure t', soit
+      <span class="math"
+        >T' = Σn<sub>&#123;ij&#125;</sub>a<sub>&#123;ij&#125;</sub></span
+      >
+      avec i ≠ j; avec, C étant le nombre des croisements de l'état, m et n des
+      coefficients entiers : m + n = C. l'invariant ΔT correspond à la valeur
+      absolue de la différence ij ij des diagonales : ΔT = |T - T'|. la valeur
+      absolue provient du fait que l'attribution d'un paramètre est arbitraire.
+      par exemple, on peut vérifier sur le dessin des états ci-dessus que T = 6
+      et T' = 2, donc ΔT = 4.
+      <br />tous les états du même amas auront même différence de tournures.
+      (exercice : dessinez l'amas correspondant et vérifiez l'invariant).
+    </p>
+    <p>
+      remarque -- seule la différence de tournures est un invariant : la parure
+      et l'ornure changent à chaque métamorphose mais leurs combinaisons donnant
+      la tournure ne changent pas. la parure se dessine dès l'ombre; elle
+      organise les croisements, à ce stade points doubles sans dessus-dessous,
+      en cycles orientés, les deux parures étant d'orientations opposées.
+      l'ornure est la lecture des dessus-dessous. leur conjugaison donne le spin
+      de l'amas, équivalent pour tous les états de l'amas, et représente le
+      double des tours que peut faire un rond autour d'un autre ou sur lui-même.
+      ΔT = 2θ. par exemple pour les états du 821 ci-dessus nous avons ΔT = 4
+      donc θ = ΔT/2 = 2, ainsi pour l'enlacement simple à 2 ronds et 2
+      croisements, nous avons ΔT = 2 soit θ = ΔT/2 = 2/2 = 1; pour le trèfle à
+      un rond et 3 croisements, ΔT = 3 et θ = 3/2, pour le listing à un rond et
+      4 croisements, ΔT = 0 et θ = 0, etc. nous appelons #équation d'état la
+      formule : η = Σxijaij, avec i, j = 1,2 et où les xij sont des entiers ≥ 0.
+      deux états différents peuvent avoir une équation d'état dif-férente ou
+      non; deux états dont les coefficients xij sont différents, sont distincts.
+    </p>
+    <h2>table d’état, partitions d’un entier et “théorie du tout”</h2>
+    <p>
+      que
+      <span class="math"
+        >C = m<sub>&#123;ij&#125;</sub> + n<sub>&#123;ij&#125;</sub> = x<sub
+          >&#123;ij&#125;</sub></span>
+      nous indique que la table d’état est une partition du nombre C. cette
+      partition partage C en quatre sommants exprimés par les quatre x<sub>ij</sub>
+      . <br />les noeuds sont, d’une certaine façon, des “représentants” des
+      entiers, quoiqu’un peu spéciaux. au moins deux nombres apparaissent
+      naturellement : le nombres de ronds, de 1 à R, et le nombre de
+      croisements, de 1 à C. en première approche, on peut donc écrire qu’un
+      noeud est η(R,C). les tableaux usuels de noeuds rangent les noeuds de
+      cette façon. <em>louis h. kauffman</em> a déjà eu l’idée que les noeuds se
+      comportaient comme des nombres et il écrivait que les noeuds obéissaient
+      aux lois de la topologie comme les nombres aux lois de l’arithmétique.
+      c’est si juste que ces lois peuvent même se rencontrer! nous organisons le
+      nombre de croisements d’un état en une table
+      <small class="text-muted"
+        >(qui n’est pas une “matrice” au sens du calcul matriciel. on pourrait,
+        tout au plus, l’appeler une “presque matrice”, mais là n’est pas encore
+        notre propos)</small
+      >, que nous appelons équation d’état. cette table est carrée à quatre
+      places, cela signifie que le nombre de croisements est un entier à quatre
+      sommants, les coefficients x<sub>ij</sub> de notre équation. les
+      partitions d’un entier en quatre sommants sont en nombres finis et il
+      n’est pas trop pénible d’écrire la super-table de toutes les combinaisons
+      possibles de quatre sommants pour un nombre fixé ni d’entrevoir la
+      construction de la méga-table de toutes les super-tables de tous les
+      entiers possibles qui représentent tous les nombres de croisements
+      possibles de tous les noeuds possibles.
+    </p>
+    <p>
+      c’est ce que nous appelons la théorie du tout pour autant que nous
+      connaîtrons de plus en plus les caractéristiques fondamentales de
+      l’univers qui nous apparaîtrons nouées et dont les noeuds se vérifieront
+      comme le glyphe ultime
+    </p>
+  </div>
+</div>

@@ -1,0 +1,86 @@
+svg .svg-elem-1 {
+  stroke-dashoffset: 1;
+  stroke-dasharray: 1;
+  animation: draw1 1s ease-out  forwards 1s;
+}
+@keyframes draw1 {
+  100% { stroke-dashoffset: 0;
+} 
+}
+
+svg .svg-elem-2 {
+  stroke-dashoffset: 1;
+  stroke-dasharray: 1;
+  animation: draw2 1s ease-out  forwards 2s;
+}
+
+@keyframes draw2 {
+  100% { stroke-dashoffset: 0;
+} 
+}
+
+svg .svg-elem-3 {
+  stroke-dashoffset: 1;
+  stroke-dasharray: 1;
+  animation: draw3 1s ease-out  forwards 3s;
+}
+
+@keyframes draw3 {
+  100% { stroke-dashoffset: 0;
+} 
+}
+
+svg .svg-elem-4 {
+  stroke-dashoffset: 1;
+  stroke-dasharray: 1;
+  animation: draw4 1s ease-out  forwards 4s;
+}
+
+@keyframes draw4 {
+  100% { stroke-dashoffset: 0;
+} 
+}
+
+svg .svg-elem-5 {
+  stroke-dashoffset: 1;
+  stroke-dasharray: 1;
+  animation: draw5 1s ease-out  forwards 5s;
+}
+
+@keyframes draw5 {
+  100% { stroke-dashoffset: 0;
+} 
+}
+
+svg .svg-elem-6 {
+  stroke-dashoffset: 1;
+  stroke-dasharray: 1;
+  animation: draw6 1s ease-out  forwards 6s;
+}
+
+@keyframes draw6 {
+  100% { stroke-dashoffset: 0;
+} 
+}
+
+svg .svg-elem-7 {
+  stroke-dashoffset: 1;
+  stroke-dasharray: 1;
+  animation: draw7 1s ease-out  forwards 7s;
+}
+
+@keyframes draw7 {
+  100% { stroke-dashoffset: 0;
+} 
+}
+
+svg .svg-elem-8 {
+  stroke-dashoffset: 1;
+  stroke-dasharray: 1;
+  animation: draw8 1s ease-out  forwards 8s;
+}
+
+@keyframes draw8 {
+  100% { stroke-dashoffset: 0;
+  } 
+}

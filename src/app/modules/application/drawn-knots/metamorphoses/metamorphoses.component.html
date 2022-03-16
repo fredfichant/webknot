@@ -1,0 +1,266 @@
+<h1 class="text-center text-warning fs-2">
+  dessiner des amas<span class="badge bg-secondary mx-3 my-3"
+    >métamorphoses</span
+  >
+</h1>
+<div class="row">
+  <div class="col-sm-12">
+    <p class="lead">
+      pour réaliser une métamorphose d’état, soit nous faisons glisser un arc
+      sur une partie de l'état, soit nous basculons un motif.
+    </p>
+    <h2 class="text-center">métamorphoses régulière et irrégulière</h2>
+    <p>
+      la métamorphose est dite <b>régulière</b> lorsqu'elle
+      <b>ne modifie pas</b> le nombre de croisements d'un état à l'autre, elle
+      est dite <i>irrégulière</i>, lorsque le nombre de croisements est
+      <i>modifié</i>. aucun glissement de rond autour de la sphère ne permet de
+      transformer ces présentations l'une en l'autre, et leurs paires de
+      #graphes ornés ne sont pas superposables.
+      <small class="text-muted">
+        exercice : il existe une table de nœuds réalisée par
+        <em>rolfsen</em> qui donne le dessin de tous les nœuds alternés et
+        non-alternés jusqu'à 10 croisements. visitez le lien suivant par exemple
+        :
+        <a href="http://katlas.org/wiki/The_Rolfsen_Knot_Table"
+          >The Rolfsen Knot Table</a
+        >
+        - puis essayez de repérer et recopier les nœuds non alternés. si vous
+        aimez le risque, créez votre propre nœud avec autant de ronds et de
+        croisements que vous le désirez. est-il réductible ? reste-il
+        métamorphosable après réduction ?</small
+      >
+    </p>
+    <h2 class="text-center">poinçons et motifs</h2>
+    <p>
+      le poinçon est un outil qui permet d’isoler un motif ou quelque partie
+      d'un état. c’est une portion du #graphe d'adjacence du nœud. un poinçon
+      est un quadrilatère souple constitué d'un nombre pair de sommets et
+      d'arêtes. il y a autant de sommets que d'arêtes. dans la pratique, si nous
+      dessinons un tel poinçon dans son état nœudien il suit naturellement les
+      courbes de l'état; c'est ensuite que nous lui donnons la forme "rigide"
+      d'un polygone aux fins de monstrations, comparaisons, explications, etc..
+      ce changement de présentation n'altère en rien l'information nœudienne
+      qu'il contient.
+    </p>
+    <h2 class="text-center">motifs élémentaires</h2>
+    <div class="text-center">
+      <img src="assets\SVG\métamorphoses\motifsimples.svg"
+       class="img-fluid imgbg"
+       alt="simple patterns"/>
+    </div>
+    <p>
+      une <b>lunule</b> est une torsade double, une <b>ganse</b> est une torsade
+      triple. ces deux motifs sont "mono-ornés" : soit <b>ω ω</b> soit
+      <b>ώ ώ</b>; une épingle est le motif formé par une portion de brin commune
+      à deux croisements consécutifs; elle peut être non alternée, en ce cas
+      elle est bi-ornée <b>ω ώ</b>, ou alternée <b>ω ω</b> ou <b>ώ ώ</b>. dans
+      nos dessins ci-dessus, les éléments de graphes, associés aux motifs
+      exhibés dans leurs poinçons, montrent : pour la lunule, une lunule
+      faisceau, arêtes ayant mêmes sommets, lien de connexité "vide", puis une
+      lunule ribambelle, arêtes ayant un seul sommet commun, lien de connexité
+      "plein"; pour la ganse, un faisceau, lien de connexité "plein" et une
+      ribambelle formant un "Z" ou un "N", lien de connexité "vide". les
+      épingles forment toujours un "V".
+    </p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-8">
+    <h2 class="text-center">motifs de métamorphoses</h2>
+    <p>
+      il y a trois motifs usuels de métamorphoses régulières qui sont détaillés
+      dans les séquences suivantes : la permutation ,le retournement du coin et
+      le retournement de l'agrafe.
+    </p>
+    <h3>la permutation</h3>
+    <p>
+      la permutation s'inscrit dans un poinçon quadrilatère. elle est composée
+      de deux torsades : une torsade double, la lunule, et une torsade simple,
+      l'autocroisement. c'est une métamorphose simple par bascule qui se
+      substitue à une série compliquée de glissements que nous illustrons par un
+      exemple :
+    </p>
+    <figure class="text-center mb-3">
+      <img src="assets\SVG\métamorphoses\permut1.svg"
+      class="img-fluid imgbg"
+      alt="permutation" />
+    </figure>
+    <p>
+      selon notre mode simplifié qui condense une série d'opérations glissantes
+      en une basculante, elle s'effectue par décroisement de l'autocroisement
+      qui disparaît pour laisser place à une torsade nulle, et réapparaît de
+      l'autre côté de la lunule un autocroisement en place de la torsade nulle.
+      une bascule remplace plusieurs glissements. nous montrons, de manière
+      condensée, à partir de deux états mutuellement métamorphosables par la
+      permutation comment s'effectue la transformation.
+    </p>
+    <figure class="text-center mb-3">
+      <img
+        src="assets\SVG\métamorphoses\analyse-permutation.svg"
+        class="img-fluid imgbg"
+        alt="permutation"
+      />
+    </figure>
+    <ul>
+      <li>
+        1° – deux états mutuellement métamorphosables par permutation sont
+        dessinés avec leur graphe d'adjacence. de ce fait nos dessins sont
+        lisibles selon les deux orientations : à partir de l'état du haut gauche
+        "de gauche à droite, de haut en bas" et à partir de l'état du bas gauche
+        "de gauche à droite, de bas en haut".
+      </li>
+      <li>
+        2° – on "extrait" de chaque état le motif de métamorphose, la
+        permutation, dont le poinçon est normalisé afin de montrer facilement la
+        métamorphose mutuelle.
+      </li>
+      <li>
+        3° – au centre le bâti commun aux deux états; le poinçon vide peut
+        recueillir chaque état de la permutation constituant l'un ou l'autre
+        état du nœud.
+      </li>
+    </ul>
+    <h3>le retournement du coin</h3>
+    <p>
+      le retournement du coin s'inscrit dans un poinçon hexagonal. c'est une
+      maille à trois croisements, où une ornure est différente des deux autres.
+      nos dessins ont même lecture que ci-dessus mais le motif de retournement
+      semble ici "extérieur" au graphe, il n'en n'est rien car il n'y a ici ni
+      "intérieur" ni "extérieur". les six "pattes" du motif sont accrochées aux
+      six arêtes de son poinçon. comme énoncé plus haut, nous donnons au
+      poinçon, pour le temps de la monstration, une forme hexagonale "rigide".
+    </p>
+    <figure class="text-center">
+      <img
+        src="assets\SVG\métamorphoses\coinretournable.ai.svg"
+        class="img-fluid imgbg"
+        alt="corber"
+      />
+    </figure>
+    <p>
+      ce motif contient deux épingles retournantes non alternées conjuguées,
+      celle du Dessus et celle du dessous. la métamorphose s'effectue par le
+      glissement d'une épingle retour-nante jusqu'à l'autre côté du croisement,
+      retournable donc, qui lui fait face. nous verrons plus loin #la relation
+      triangle-étoile yang baxter une description complète de cette métamorphose
+      et son usage en direction des #...écolières et écoliers.
+    </p>
+    <h3>le retournement de l'agrafe</h3>
+    <p>
+      le retournement de l'agrafe s'inscrit dans un poinçon hexagonal. c'est une
+      maille à quatre croisements que l'on peut décomposer en une lunule
+      alternée et une épingle non alternée, l'épingle retournante.
+    </p>
+    <figure class="text-center mb-3">
+      <img
+        src="assets\SVG\métamorphoses\analyseagrafe.svg"
+        class="img-fluid mt-4 imgbg"
+        alt="clip analyse"
+      />
+    </figure>
+    <h3 class="text-center">le retournement par l'épingle</h3>
+    <p>
+      ces schémas généralisent les motifs ci-dessus : un croisement dans le
+      poinçon carré donne le coin retournable, une lunule donne l'agrafe
+      retournable. le retournement est représenté par un poinçon hexagonal
+      "extérieur" et un poinçon carré "intérieur", tous deux valués
+      connectivement et reliés d'un côté (haut) par une torsade nulle,
+      c'est-à-dire ne comportant aucun croisement, et de l'autre (bas) par un
+      motif à deux croisements et quatre "pattes", l'"épingle" non alternée. la
+      métamorphose consiste en le glissement de cette portion de brin à deux
+      croisements non alternés, que nous nommons relativement à la métamorphose
+      considérée épingle retournante, de part et d'autre du poinçon carré. notez
+      qu'à ce moment la valuation du grand poinçon reste invariante alors que
+      celle du petit poinçon commute ce qui signifie que tout son contenu change
+      de lien de connexité. avec beaucoup de doigté dans le dessin, il est
+      possible d'"inverser", pour le regard tout au moins, les positions
+      relatives des deux poinçons et d'échanger ainsi leurs rôles : le grand
+      poinçon devient "intérieur" et le petit "extérieur". cette inversion des
+      opérateurs nous la nommons renversement, et l'épingle de retournante
+      devient renversante. métamorphose qui peut se décomposer en une lunule
+      alternée et une épingle non alternée, l'épingle retournante s'effectue
+      tout comme le retournement. de même notez la commutation des liens de
+      connexité.
+    </p>
+    <img src="assets\SVG\métamorphoses\retournement 2.svg"
+    class="imgbg"
+    alt="clip"/>
+    <p>
+      la relativité des métamorphoses consiste ici en l'inversion des
+      caractéristiques des motifs l'un par rapport à l'autre tout en gardant
+      invariants leurs rapports réciproques.
+    </p>
+  </div>
+  <div class="col-sm-4">
+    <div><br /><br /><br /></div>
+    <figure class="img-hover-zoom overflow-visible">
+      <img src="assets\SVG\métamorphoses\permuta3.svg" style="width: 80%"
+      class="imgbg"
+      alt="permutation" />
+      <figcaption>la permutation</figcaption>
+    </figure>
+    <figure class="d-flex">
+      <div class="img-hover-zoom overflow-visible">
+        <img
+          src="assets\SVG\métamorphoses\permutation2.svg"
+          style="width: 80%"
+          class="imgbg"
+          alt="permutation"
+        />
+      </div>
+      <div class="img-hover-zoom overflow-visible">
+        <img
+          src="assets\SVG\métamorphoses\permutation3.svg"
+          style="width: 90%"
+          class="imgbg"
+          alt="permutation"
+        />
+      </div>
+    </figure>
+    <div>
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    </div>
+    <figure class="img-hover-zoom overflow-visible">
+      <img
+        src="assets\SVG\métamorphoses\coinRetournable.svg"
+        style="width: 90%"
+        alt="corner"
+        class="imgbg"
+      />
+      <figcaption>retournement du coin</figcaption>
+    </figure>
+    <div>
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    </div>
+    <figure class="img-hover-zoom overflow-visible">
+      <img
+        src="assets\SVG\métamorphoses\agrafe-décomposéeb.svg"
+        style="width: 90%"
+        alt="clip"
+        class="imgbg"
+      />
+      <figcaption>retournement de l'agrafe</figcaption>
+    </figure>
+    <div>
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    </div>
+    <figure class="img-hover-zoom overflow-visible">
+      <img src="assets\SVG\métamorphoses\retournement.svg" style="width: 90%"
+      alt="turning"
+      class="imgbg"/>
+      <figcaption>retournement du poinçon par l'épingle</figcaption>
+    </figure>
+    <figure class="img-hover-zoom overflow-visible">
+      <img
+        src="assets\SVG\métamorphoses\retournementZ.svg"
+        style="width: 90%"
+        class="imgbg"
+        alt="z turning"
+      />
+      <figcaption>
+        retournement du poinçon par le z <br />(épingle de portée 3)
+      </figcaption>
+    </figure>
+  </div>
+</div>

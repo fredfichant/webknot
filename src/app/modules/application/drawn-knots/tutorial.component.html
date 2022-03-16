@@ -1,0 +1,172 @@
+<div class="container bd-layout">
+  <div class="bd-sidebar">
+    <ul class="list-unstyled p-2">
+      <li class="mb-1">
+        <button
+          class="btn btn-toggle align-items-center rounded collapsed"
+          data-bs-toggle="collapse"
+          data-bs-target="#home-collapse"
+          aria-expanded="true"
+        >
+          introduction to nœudienne
+        </button>
+        <div class="collapse show" id="home-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li>
+              <a routerLink="/drawn-knots/definition" class="link-dark rounded"
+                ><i class="fas fa-atom text-warning mt-1 me-2"></i>nœudienne
+                définition of a knot</a
+              >
+            </li>
+            <li>
+              <a routerLink="/drawn-knots/pacity" class="link-dark rounded"
+                ><i class="fas fa-spinner text-warning mt-1 me-2"></i>sPan</a
+              >
+            </li>
+            <li>
+              <a
+                routerLink="/drawn-knots/reducibility"
+                class="link-dark rounded"
+                ><i class="fas fa-greater-than-equal text-warning mt-1 me-2"></i
+                >reducibility</a
+              >
+            </li>
+            <li>
+              <a
+                routerLink="/drawn-knots/normalization"
+                class="link-dark rounded"
+                ><i class="fab fa-ring text-warning mt-1 me-2"></i
+                >normalization</a
+              >
+            </li>
+            <li>
+              <a routerLink="/drawn-knots/turn" class="link-dark rounded"
+                ><i class="fas fa-dna text-warning mt-1 me-2"></i>turn</a
+              >
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="mb-1">
+        <button
+          class="btn btn-toggle align-items-center rounded collapsed"
+          data-bs-toggle="collapse show"
+          data-bs-target="#orders-collapse"
+          aria-expanded="false"
+        >
+          swarms drawing
+        </button>
+        <div class="collapse show" id="orders-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li>
+              <a
+                routerLink="/drawn-knots/clusterdraw"
+                class="link-dark rounded"
+              >
+                <i class="fas fa-draw-polygon text-primary mt-1 me-2"></i
+                >swarms drawing</a
+              >
+            </li>
+            <li>
+              <a routerLink="/drawn-knots/clusters" class="link-dark rounded">
+                <i class="fas fa-paper-plane text-primary mt-1 me-2"></i
+                >amas</a
+              >
+            </li>
+            <li>
+              <a
+                routerLink="/drawn-knots/metamorphoses"
+                class="link-dark rounded"
+              >
+                <i class="fas fa-bolt text-primary mt-1 me-2"></i
+                >nœudienne metamorphoses</a
+              >
+            </li>
+            <li>
+              <a routerLink="/drawn-knots/shade" class="link-dark rounded">
+                <i class="fas fa-cloud-moon-rain text-primary mt-1 me-2"></i>shade
+                and adornement</a
+              >
+            </li>
+            <li>
+              <a routerLink="/drawn-knots/graphs" class="link-dark rounded">
+                <i class="fas fa-recycle text-primary mt-1 me-2"></i
+                >nœudien graphs</a
+              >
+            </li>
+            <li>
+              <a routerLink="/drawn-knots/equation" class="link-dark rounded">
+                <i class="fas fa-balance-scale text-primary mt-1 me-2"></i>state
+                equation</a
+              >
+            </li>
+            <li>
+              <a routerLink="/drawn-knots/rarity" class="link-dark rounded">
+                <i class="fas fa-crop-alt text-primary mt-1 me-2"></i>rarity
+                test</a
+              >
+            </li>
+            <li>
+              <a
+                routerLink="/drawn-knots/particulate"
+                class="link-dark rounded"
+              >
+                <i class="fas fa-gem text-primary mt-1 me-2"></i
+                >particulate formula</a
+              >
+            </li>
+            <li>
+              <a routerLink="/drawn-knots/mutations" class="link-dark rounded">
+                <i class="fas fa-menorah text-primary mt-1 me-2"></i
+                >nœudienne mutations</a
+              >
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="border-top my-3"></li>
+      <li class="mb-1">
+        <button
+          class="btn btn-toggle align-items-center rounded collapsed"
+          data-bs-toggle="collapse"
+          data-bs-target="#account-collapse"
+          aria-expanded="false"
+        >
+          nœudienne constructions
+        </button>
+        <div class="collapse show" id="account-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li>
+              <a
+                routerLink="/drawn-knots/kconstruction"
+                class="link-dark rounded"
+              >
+                <i class="fas fa-infinity text-success mt-1 me-2"></i
+                >nœudiennes constructions</a
+              >
+            </li>
+            <li>
+              <a routerLink="/drawn-knots/jacob" class="link-dark rounded">
+                <i class="fas fa-ruler text-success mt-1 me-2"></i>jacob's
+                ladder</a
+              >
+            </li>
+            <li>
+              <a routerLink="/drawn-knots/homotony" class="link-dark rounded">
+                <i class="fas fa-microscope text-success mt-1 me-2"></i
+                >nœudienne homotony</a
+              >
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+
+  <div class="row">
+    <div class="col p-3">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
