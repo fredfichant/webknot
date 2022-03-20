@@ -8,11 +8,7 @@ import { NgPrimeModule } from 'src/app/shared/ng-prime.module';
 @NgModule({
   declarations: [ConstructionsComponent],
 
-  imports: [
-    CommonModule,
-    ConstructionsRoutingModule,
-    NgPrimeModule
-  ],
+  imports: [CommonModule, ConstructionsRoutingModule, NgPrimeModule],
   exports: [ConstructionsComponent],
 })
 export class ConstructionsModule {}

@@ -1,26 +1,27 @@
 <div class="container py-5">
   <h1 class="text-danger text-center bg-info py-3 px-5">
-    <span class="text-light">ucsografics</span> - drawing knots &#8601; writing
-    of unconscious
+    <span class="text-light">{{ "HOME.H1" | translate | translateCut: 0 }}</span
+    >{{ "HOME.H1" | translate | translateCut: 1 }} &#8601;{{
+      "HOME.H1" | translate | translateCut: 2
+    }}
   </h1>
-  <p><em>plastique des nœuds rares</em> book published in 1992 in paris.</p>
+  <p>
+    {{ "HOME.H1a" | translate | translateCut: 0
+    }}<em>plastique des nœuds rares</em
+    >{{ "HOME.H1a" | translate | translateCut: 1 }}
+  </p>
   <hr />
   <div class="row mb-2">
     <div class="col-md-8 mb-4">
       <h2 class="bg-secondary mb-3 py-3">
-        <em class="text-warning">nœudienne</em> plastic<i
-          class="fas fa-list ms-2"
-        ></i>
+        {{ "HOME.H1" | translate }}<i class="fas fa-list ms-2"></i>
       </h2>
       <div class="card bg-warning mt-5 mb-3 px-4 py-4 rounded shadow">
         <h5 class="card-title fw-bold text-danger">
-          a science that is practiced like an art, an art that is built like
-          knowledge
+          {{ "HOME.H2a" | translate }}
         </h5>
         <p class="card-text text-success">
-          nœdian plastic requires only capital within the reach of anyone who
-          approaches it with an uninhibited curiosity that any free child
-          projects in all things for his greatest satisfaction.
+          {{ "HOME.P1" | translate }}
         </p>
       </div>
     </div>

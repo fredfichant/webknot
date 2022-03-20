@@ -22,10 +22,7 @@ import { KnotConstructionsComponent } from './knot-constructions/knot-constructi
 import { JacobComponent } from './jacob/jacob.component';
 import { HomotonyComponent } from './homotony/homotony.component';
 
-
-
 import { Animation6Component } from 'src/app/animations/animation6/animation6.component';
-
 
 @NgModule({
   declarations: [
@@ -48,15 +45,9 @@ import { Animation6Component } from 'src/app/animations/animation6/animation6.co
     JacobComponent,
     HomotonyComponent,
 
-    Animation6Component
-
+    Animation6Component,
   ],
-  imports: [
-    CommonModule,
-    TutorialRoutingModule
-  ],
-  exports: [
-    TutorialComponent,
-  ],
+  imports: [CommonModule, TutorialRoutingModule],
+  exports: [TutorialComponent],
 })
-export class TutorialModule { }
+export class TutorialModule {}

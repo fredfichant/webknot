@@ -43,26 +43,28 @@
 
         <li class="nav-item">
           <a class="nav-link" aria-current="page" routerLink="/">
-            <i class="fas fa-home me-1"></i>home</a
+            <i class="fas fa-home me-1"></i>{{ "APP.HOME" | translate }}</a
           >
         </li>
       </ul>
       <ul class="navbar-nav mx-auto">
         <li class="nav-item">
           <a class="nav-link" aria-current="page" routerLink="/blog">
-            <i class="fas fa-marker"></i>nœdian blog</a
+            <i class="fas fa-marker"></i>{{ "APP.BLOG" | translate }}</a
           >
         </li>
       </ul>
       <ul class="navbar-nav me-auto">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" routerLink="/about">
-            <i class="far fa-question-circle me-1"></i>about</a
+            <i class="far fa-question-circle me-1"></i
+            >{{ "APP.ABOUT" | translate }}</a
           >
         </li>
         <li class="nav-item">
           <a class="nav-link" aria-current="page" routerLink="/contact">
-            <i class="fas fa-envelope me-1"></i>contact</a
+            <i class="fas fa-envelope me-1"></i
+            >{{ "APP.CONTACT" | translate }}</a
           >
         </li>
       </ul>
@@ -72,14 +74,14 @@
           class="btn btn-sm nga-btn-navbar me-2"
           routerLink="/signup"
         >
-          <i class="fas fa-user-plus me-2"></i>sign up
+          <i class="fas fa-user-plus me-2"></i>{{ "APP.SIGN" | translate }}
         </button>
         <button
           type="button"
           class="btn btn-sm btn-outline-light me-2"
           routerLink="/login"
         >
-          <i class="fas fa-sign-in-alt me-2"></i>login
+          <i class="fas fa-sign-in-alt me-2"></i>{{ "APP.LOG" | translate }}
         </button>
       </form>
     </div>
