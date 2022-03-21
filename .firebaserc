@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "web-knot": {
+      "hosting": {
+        "web-knot": [
+          "web-knot"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "web-knot"
+  }
+}

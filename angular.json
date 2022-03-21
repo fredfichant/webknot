@@ -21,7 +21,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/web-knot/browser",
+            "outputPath": "dist/web-knot",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -48,7 +48,9 @@
               "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
               "src/styles.scss"
             ],
-            "scripts": ["node_modules/bootstrap/dist/js/bootstrap.min.js"],
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ],
             "serviceWorker": true,
             "ngswConfigPath": "ngsw-config.json"
           },
@@ -135,73 +137,14 @@
             "scripts": []
           }
         },
-        "server": {
-          "builder": "@angular-devkit/build-angular:server",
-          "options": {
-            "outputPath": "dist/web-knot/server",
-            "main": "server.ts",
-            "tsConfig": "tsconfig.server.json",
-            "inlineStyleLanguage": "scss"
-          },
-          "configurations": {
-            "production": {
-              "outputHashing": "media",
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.prod.ts"
-                }
-              ]
-            },
-            "development": {
-              "optimization": false,
-              "sourceMap": true,
-              "extractLicenses": false
-            }
-          },
-          "defaultConfiguration": "production"
-        },
-        "serve-ssr": {
-          "builder": "@nguniversal/builders:ssr-dev-server",
-          "configurations": {
-            "development": {
-              "browserTarget": "web-knot:build:development",
-              "serverTarget": "web-knot:server:development"
-            },
-            "production": {
-              "browserTarget": "web-knot:build:production",
-              "serverTarget": "web-knot:server:production"
-            }
-          },
-          "defaultConfiguration": "development"
-        },
-        "prerender": {
-          "builder": "@nguniversal/builders:prerender",
-          "options": {
-            "routes": ["/"]
-          },
-          "configurations": {
-            "production": {
-              "browserTarget": "web-knot:build:production",
-              "serverTarget": "web-knot:server:production"
-            },
-            "development": {
-              "browserTarget": "web-knot:build:development",
-              "serverTarget": "web-knot:server:development"
-            }
-          },
-          "defaultConfiguration": "production"
-        },
         "deploy": {
           "builder": "@angular/fire:deploy",
           "options": {
-            "prerender": true,
+            "prerender": false,
             "ssr": false,
             "browserTarget": "web-knot:build:production",
             "firebaseProject": "web-knot",
-            "firebaseHostingSite": "web-knot",
-            "serverTarget": "web-knot:server:production",
-            "prerenderTarget": "web-knot:prerender:production"
+            "firebaseHostingSite": "web-knot"
           }
         }
       }
