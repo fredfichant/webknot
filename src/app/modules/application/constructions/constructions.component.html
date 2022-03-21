@@ -1,20 +1,88 @@
 <div class="container">
-  <div class="row py-5 ">
-    <nav class="col-2  py-3 bg-primary rounded" >
-
-      <p-accordion >
-        <p-accordionTab header="tables nœudiennes">
-
+  <div class="row py-3">
+    <nav class="col-md-2 py-3 bg-primary rounded">
+      <p-accordion>
+        <p-accordionTab header="tables nœudiennes"
+          ><li>
+            <a routerLink="table8" routerLinkActive="active">c8 R1 R2</a>
+          </li>
+          <li>
+            <a routerLink="table9" routerLinkActive="active">c9 R1 R2</a>
+          </li>
         </p-accordionTab>
 
         <p-accordionTab header="surfaces complémentaires">
-
+          <li>
+            <a routerLink="jacob2" routerLinkActive="active">jacob</a>
+          </li>
         </p-accordionTab>
       </p-accordion>
     </nav>
 
-    <div class="col-8">
-      <p>quelque chose</p>
+    <div class="col-md-9">
+      <div class="bg-warning my-2 px-5 py-2">
+        <p>
+          prenez garde, la table nœudienne est une page en construction infinie
+          ! <br />toute contribution est bienvenue pour compléter les
+          différentes tables référencées par leur paramètres nœudiens
+          <b>courbure c</b> et nombre de ronds<b>R</b>. nous escaladerons aussi
+          <mark>l'échelle de jacob</mark>.
+        </p>
+      </div>
+      <p-accordion>
+        <p-accordionTab header="les premières tables nœudiennes">
+          <p-tabView>
+            <p-tabPanel header="1-6">
+              <figure>
+                <img src="assets\SVG\liste1.svg" class="img-fluid" />
+                <figcaption>
+                  série des métaboles de 1 à 6 croisements
+                </figcaption>
+              </figure>
+            </p-tabPanel>
+            <p-tabPanel header="c6 R3">
+              <h2 class="bg-warning text-white text-center">
+                premier noeud métamorphosable
+              </h2>
+              <figure class="figure text-center">
+                <img
+                  src="assets\SVG\c=6\amas6.svg"
+                  class="img-figure w-75"
+                  alt="dessin du premier amas à 3 ronds dit la maja"
+                />
+              </figure>
+              <figcaption class="text-center">amas de la maja</figcaption>
+              <p>
+                première métabole racine suivant la définition, le trèfle
+                faisant exeption
+              </p></p-tabPanel
+            >
+
+            <p-tabPanel header="c7 R2">
+              <div class="d-flex flex-row justify-content-center text-center">
+                <figure class="img-hover-zoom overflow-visible">
+                  <img src="assets\SVG\c=7\amas7-2R.svg" style="width: 70%" />
+
+                  <figcaption>amas 7A</figcaption>
+                </figure>
+                <figure class="img-hover-zoom overflow-visible">
+                  <img
+                    src="assets\SVG\c=7\ama7justgraf.svg"
+                    style="width: 80%"
+                  />
+
+                  <figcaption>amas 7B - [todo] restituer les états</figcaption>
+                </figure>
+              </div>
+              <p>
+                <strong>remarque :</strong> il n'y a pas de noeud racine à 7
+                croisements
+              </p>
+            </p-tabPanel>
+          </p-tabView>
+        </p-accordionTab>
+      </p-accordion>
+      <router-outlet></router-outlet>
     </div>
   </div>
 </div>

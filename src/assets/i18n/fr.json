@@ -39,5 +39,10 @@
     "P31": "j'ai découvert la plastique nœudienne en faisant la rencontre de son inventeur,",
     "P32": "l'auteur de la plupart des textes de ce site. c'était en 2007.",
     "TITLE4": "typographie"
+  },
+  "CONTACT": {
+    "H1": "contactez nous",
+    "MAILING": "partagez",
+    "MAP": "suivez nous"
   }
 }

@@ -28,6 +28,7 @@
   "ABOUT": {
     "MAILING": "mailing",
     "MAP": "map",
+    "DONATION": "make a donation",
 
     "TITLE1": "what is noeudian plastic ?",
     "P11": "it is this practice that is referred to as nœudian plastic .| let's take a step back: when we calculated with roman numerals, calculations quickly became impossible, zero did not exist! with hindo-arabic ciphering the universe of numbers has conquered the world. nothing is thought without the number, directly or in the background. the real 'globalism' began with this and culminates in technology, especially computer science, and... sociology, that is to say the digital tracking of populations.",
@@ -43,6 +44,15 @@
     "P31": "i discovered the noeudian plastic by meeting its inventor,",
     "P32": "the author of most of the texts on this site. this was in 2007.",
 
-    "TITLE4": "typography"
+    "TITLE4": "typography",
+
+    "TITLE5": "full-stack development ",
+    "P5": "i have designed this site with the angular framework for the front-end. the back-end part is done with firebase"
+  },
+  "CONTACT": {
+    "H1": "contact us",
+    "P1": "don't hesitate to share or ask questions",
+    "MAILING": "mailing",
+    "MAP": "follow us"
   }
 }
