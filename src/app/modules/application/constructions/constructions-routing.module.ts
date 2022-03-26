@@ -1,3 +1,4 @@
+import { AccueilLexiqueComponent } from './accueil-lexique/accueil-lexique.component';
 import { Table8Component } from './table8/table8.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -20,6 +21,14 @@ const routes: Routes = [
         loadChildren: () =>
           import('./00-main/exercice.module').then((mod) => mod.ExerciceModule),
       },
+      {
+        path: 'mailing',
+        loadChildren: () =>
+          import(`./accueil-lexique/accueil-lexique.module`).then(
+            (mod) => mod.AccueiLexiqueModule
+          ),
+      },
+
       { path: 'table8', component: Table8Component },
       { path: 'table9', component: Table9Component },
       { path: 'table10', component: VueTable10Component },
@@ -28,6 +37,7 @@ const routes: Routes = [
       { path: 'table13', component: VueTable13Component },
       { path: 'table14', component: VueTable14Component },
       { path: 'table15', component: VueTable15Component },
+      { path: 'lexique', component: AccueilLexiqueComponent },
     ],
   },
 ];

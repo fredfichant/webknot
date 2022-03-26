@@ -1,48 +1,37 @@
 {
-  "APP_TITLE": "why knot",
-  "CONTACT_US": "contact us :",
-
-  "APP": {
-    "TITLE": "rare knots - why knot ?",
-    "HOME": "accueil",
-    "DONATION": "faire un don",
-    "BLOG": "blog nœudien",
-    "ABOUT": "à propos",
-    "CONTACT": "contact",
-    "SIGN": "s'inscrire",
-    "LOG": "connexion"
-  },
-
-  "HOME": {
-    "H1": "icsographie | écriture de l'inconscient",
-    "H1a": "ce site vous invite à pratiquer les dessins de la plastique nœudienne à partir de | livre publié en 1992 à paris - france",
-    "H2": "plastique nœudienne",
-    "H2a": " une science qui se pratique comme un art, un art qui se construit comme un savoir",
-    "P1": "la plastique nœudienne ne nécessite qu'un capital à la portée de quiconque l'aborde avec une curiosité sans inhibition que tout enfant libre projette en toute chose pour sa plus grande satisfaction."
-  },
-  "PNF": {
-    "H1": "not-found works !",
-    "H2": "veuillez revenir plus tard - page en cours de construction"
-  },
-  "ABOUT": {
-    "MAILING": "mailing",
-    "MAP": "carte",
-    "TITLE1": "la plastique nœudienne, c'est quoi  ?",
-    "P11": "c'est cette pratique que l'on appelle la plastique nœudienne .| faisons un retour en arrière : quand on calculait avec des chiffres romains, les calculs devenaient vite impossibles, le zéro n'existait pas ! avec le chiffrage hindo-arabe, l'univers des nombres a conquis le monde. rien ne se pense sans le chiffre, directement ou en arrière-plan. le véritable 'mondialisme' a commencé par là et culmine dans la technologie, notamment l'informatique, et... la sociologie, c'est-à-dire le suivi numérique des populations.",
-    "P12": "avec la pratique nœudienne, il semble qu'un nouveau paradigme apparaisse. un signe de cette révolution conceptuelle est donné par la véritable frénésie (le mot est faible !) qui s'est emparée des topologues et l'écho plus ou moins amical qu'ils rencontrent au sein des autres pratiques scientifiques. mais... comme dans toute révolution, il y a deux voies... au moins ! et pas plus que les chiffres hindo-arabes n'ont effacé les chiffres romains qui trouvaient refuge dans les pendules, la pratique nœudienne n'effacera le numéral.",
-    "P13": "notre ambition est de diffuser une vue d'ensemble du livre plastique des nœuds rares et des autres ouvrages qui ont suivi, afin de permettre à chacun de se lancer dans cette aventure et de s'initier à la plastique nœuddienne avec pour seul bagage un bout de papier, un crayon et beaucoup de curiosité. les séquences sont agencées de manière à progresser simplement en complexité.",
-    "P14": " le texte et les dessins fournissent pas à pas les outils, le vocabulaire, la méthode et les illustrations nécessaires pour dessiner la nuée d'un nœud rare... cette exposition systématique n'est pas linéaire ; de plus, les notions évoquées ici s'entrecroisent les unes avec les autres... comme un nœud. ",
-    "TITLE2": "lettre de l'auteur",
-    "P21": "quand tu en auras assez de filer droit dans l’espace orthosexuel de l’agynécographie, tu t’apercevras que la plastique sexuelle — qui est au travail sur les noeuds ce que poésie et linguistique sont à l’apprentissage d’une langue nouvelle —, à peine née nuée au printemps 1993, te répondait déjà.",
-    "P22": "nous devons être persuadé e s que la nature du vrai est de percer quand son temps est venu, et qu’il se manifeste seulement quand ce temps est venu; c’est pourquoi il ne se manifeste pas trop tôt et ne trouve pas des lectrices sans maturité auto-hétérosexuelle pour le recevoir; nous devons être aussi persuadé e s que l’individu e a besoin de ce résultat pour se confirmer dans ce qui n’est encore que sa conviction solitaire autosexuelle , et pour éprouver comme quelque chose d’universel la conviction qui appartient d’abord seulement à la particularité....l’action efficace de l’oeuvre sur la lectrice est plus discrète que l’agitation de ces morts ensevelissant leurs morts....cette action lente prépare ainsi aux un e s seulement au bout de quelques temps un monde qui est le leur, tandis que les autres après une vogue temporaire n’ont plus de postérité.",
-    "TITLE3": "note de l'éditeur",
-    "P31": "j'ai découvert la plastique nœudienne en faisant la rencontre de son inventeur,",
-    "P32": "l'auteur de la plupart des textes de ce site. c'était en 2007.",
-    "TITLE4": "typographie"
-  },
-  "CONTACT": {
-    "H1": "contactez nous",
-    "MAILING": "partagez",
-    "MAP": "suivez nous"
-  }
+	"APP": {
+		"ABOUT": "à propos",
+		"BLOG": "blog nœudien",
+		"CONTACT": "contact",
+		"DONATION": "faire un don",
+		"HOME": "accueil",
+		"LOG": "connexion",
+		"SIGN": "s'inscrire",
+		"TITLE": "les nœuds rares - waI nQj ?"
+	},
+	"APP_TITLE": "nœuds rares",
+	"CONTACT": {
+		"H1": "contactez nous",
+		"MAILING": "courrier électronique",
+		"MAP": "situation",
+		"P1": "n'hésitez pas à partager, à proposer des corrections, à poser des questions ..."
+	},
+	"CONTACT_US": "contactez nous ",
+	"HOME": {
+		"C1": "dessinons des nœuds",
+		"C1P": "le livre \"plastique des nœuds rares\" constitue la systématique  initiation à ce nouvel art-science.",
+		"C2": "constructions de nœuds",
+		"C2P": "table des nœuds - surfaces complémentaires -glossaire",
+		"C3": "domaines contigus",
+		"C3P": "recueil de textes - l'ouvrière et l'hétérosexuelle",
+		"H1": "icsographie |dessiner des nœuds| écriture de l'inconscient",
+		"H1a": "ce site vous invite à pratiquer les dessins de la plastique nœudienne à partir de | livre publié en 1992 à paris - france",
+		"H2": "plastique nœudienne",
+		"H2a": " une science qui se pratique comme un art, un art qui se construit comme un savoir",
+		"P1": "la plastique nœudienne ne nécessite qu'un capital à la portée de quiconque l'aborde avec une curiosité sans inhibition que tout enfant libre projette en toute chose pour sa plus grande satisfaction."
+	},
+	"PNF": {
+		"H1": "les œuvres introuvables !",
+		"H2": "veuillez revenir plus tard - page en cours de construction"
+	}
 }

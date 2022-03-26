@@ -1,63 +1,110 @@
 <div class="container py-5">
   <h1 class="text-danger text-center bg-info py-3 px-5">
-    <span class="text-light">{{ "HOME.H1" | translate | translateCut: 0 }}</span
-    >{{ "HOME.H1" | translate | translateCut: 1 }} &#8601;{{
-      "HOME.H1" | translate | translateCut: 2
-    }}
+    <span class="text-light">
+      <i class="fa-solid fa-puzzle-piece"></i>
+      {{ "HOME.H1" | translate | translateCut: 0 }} </span
+    ><i class="fa-solid fa-pen-to-square"></i>
+    {{ "HOME.H1" | translate | translateCut: 1 }}
+    <i class="fa-solid fa-share"></i>
+    {{ "HOME.H1" | translate | translateCut: 2 }}
   </h1>
   <p>
     {{ "HOME.H1a" | translate | translateCut: 0
-    }}<em>plastique des nœuds rares</em
+    }}<em> plastique des nœuds rares </em
     >{{ "HOME.H1a" | translate | translateCut: 1 }}
   </p>
+
   <hr />
-  <div class="row mb-2">
+  <div class="row mb-1">
     <div class="col-md-8 mb-4">
       <h2 class="bg-secondary mb-3 py-3">
-        {{ "HOME.H1" | translate }}<i class="fas fa-list ms-2"></i>
+        {{ "HOME.H2" | translate }}<i class="fas fa-list ms-2"></i>
       </h2>
       <div class="card bg-warning mt-5 mb-3 px-4 py-4 rounded shadow">
         <h5 class="card-title fw-bold text-danger">
+          <i class="fa-solid fa-book-open"></i>
           {{ "HOME.H2a" | translate }}
+          <i class="fa-solid fa-apple-whole"></i>
         </h5>
         <p class="card-text text-success">
           {{ "HOME.P1" | translate }}
         </p>
       </div>
+      <div class="row">
+        <div class="col sm-4">
+          <div class="nga-card bg-light mb-3">
+            <a routerLink="/drawn-knots">
+              <div class="card-header">
+                <div class="row">
+                  <div class="col-10 col-xl-10">
+                    <h5 class="card-title">{{ "HOME.C1" | translate }}</h5>
+                  </div>
+                  <div class="col-2 col-xl-2">
+                    <i class="fas fa-palette fa-lg text-primary"></i>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <div class="card-body bg-secondary">
+              <p class="card-text text-light">
+                {{ "HOME.C1P" | translate }}
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col sm-4">
+          <div class="nga-card bg-light mb-3">
+            <a routerLink="/node-c">
+              <div class="card-header">
+                <div class="row">
+                  <div class="col-10 col-xl-10">
+                    <h5 class="card-title">
+                      {{ "HOME.C2" | translate }}
+                    </h5>
+                  </div>
+                  <div class="col-2 col-xl-2">
+                    <i class="fas fa-bezier-curve fa-lg text-primary"></i>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <div class="card-body bg-secondary">
+              <p class="card-text text-light">
+                {{ "HOME.C2P" | translate }}
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col sm-4">
+          <div class="nga-card bg-light mb-3">
+            <a routerLink="/domains">
+              <div class="card-header">
+                <div class="row">
+                  <div class="col-10 col-xl-10">
+                    <h5 class="card-title">{{ "HOME.C3" | translate }}</h5>
+                  </div>
+                  <div class="col-2 col-xl-2">
+                    <i class="fas fa-atom fa-lg text-primary"></i>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <div class="card-body bg-secondary">
+              <p class="card-text text-light">{{ "HOME.C3P" | translate }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="col-md-4 mb-2">
+    <div class="col-md-4 mb-1">
       <img src="\assets\GIF\anim8.gif" />
     </div>
   </div>
   <hr />
-  <div class="row pt-2">
-    <!--liste des feature-->
-    <div
-      class="col-8 col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-2"
-      *ngFor="let feature of features"
-    >
-      <div class="nga-card bg-light mb-3">
-        <a routerLink="/{{ feature.link }}">
-          <div class="card-header">
-            <div class="row">
-              <div class="col-10 col-xl-10">
-                <h5 class="card-title">{{ feature.name }}</h5>
-              </div>
-              <div class="col-2 col-xl-2">
-                <i class="{{ feature.icon }} fa-lg text-primary"></i>
-              </div>
-            </div></div
-        ></a>
-        <div class="card-body bg-secondary">
-          <p class="card-text text-light">{{ feature.description }}</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <hr />
+
   <!--pied de page-->
   <div class="row">
-    <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 text-center mb-2">
+    <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 text-center mb-1">
       <h4>
         <i class="fas fa-laptop fa-lg me-2 text-primary">2022</i>
         {{ name }}

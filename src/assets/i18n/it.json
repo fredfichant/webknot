@@ -1,0 +1,37 @@
+{
+	"APP": {
+		"ABOUT": "su",
+		"BLOG": "n2die~ blog",
+		"CONTACT": "contattare",
+		"DONATION": "fate una donazione.",
+		"HOME": "casa",
+		"LOG": "login",
+		"SIGN": "registrare",
+		"TITLE": "nodo raro - waI nQj ?"
+	},
+	"APP_TITLE": "nodi rari",
+	"CONTACT": {
+		"H1": "contattaci",
+		"MAILING": "posta elettronica",
+		"MAP": "situazione",
+		"P1": "non esitate a condividere, a suggerire correzioni, a fare domande..."
+	},
+	"CONTACT_US": "contattaci",
+	"HOME": {
+		"C1": "disegniamo nodi",
+		"C1P": "il libro \"plastica di nodi rari\" ne costituisce la sistematica\n                 iniziazione a questa nuova arte-scienza.",
+		"C2": "costruzione del nodo",
+		"C2P": "tavola dei nodi - superfici complementari - glossario",
+		"C3": "domini contigui",
+		"C3P": "raccolta di testi - donna, operaia ed eterosessuale",
+		"H1": "icsografia | disegnare nodi |scrivere l'inconscio",
+		"H1a": "questo sito vi invita a praticare i disegni di plastica nodosa dal libro | pubblicato nel 1992 a parigi - francia",
+		"H2": "plastica nodosa",
+		"H2a": " una scienza che si pratica come un'arte, un'arte che si costruisce come conoscenza",
+		"P1": "la plasticità del nodo richiede solo un capitale alla portata di chiunque si avvicini ad esso con la curiosità disinibita che ogni bambino libero proietta in ogni cosa per la sua massima soddisfazione."
+	},
+	"PNF": {
+		"H1": "non trovato funziona!",
+		"H2": "per favore tornate più tardi - pagina in costruzione"
+	}
+}

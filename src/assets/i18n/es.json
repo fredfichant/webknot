@@ -1,0 +1,37 @@
+{
+	"APP": {
+		"ABOUT": "sobre",
+		"BLOG": "blog de n2die~",
+		"CONTACT": "contactar ",
+		"DONATION": "haz una donación.",
+		"HOME": "inicio",
+		"LOG": "inicio de sesión",
+		"SIGN": "registrar",
+		"TITLE": "nudos raros - waI nQj ?"
+	},
+	"APP_TITLE": "nodos raros",
+	"CONTACT": {
+		"H1": "contáctenos",
+		"MAILING": "correo electrónico",
+		"MAP": "situación",
+		"P1": "no dude en compartir, sugerir correcciones, hacer preguntas..."
+	},
+	"CONTACT_US": "contáctenos",
+	"HOME": {
+		"C1": "dibujemos nudos",
+		"C1P": "el libro \"plástica de nudos raros\" constituye la sistemática\n                 iniciación a este nuevo arte-ciencia.",
+		"C2": "construcción de nodos",
+		"C2P": "tabla de nodos - superficies complementarias - glosario",
+		"C3": "dominios contiguos",
+		"C3P": "colección de textos -  la trabajadora y la heterosexual",
+		"H1": "icsografía |  dibujar nudos |escribir el inconsciente",
+		"H1a": "este sitio le invita a practicar dibujos plásticos nudosos  del libro | publicado en 1992 en parís - francia",
+		"H2": "plástica nudosa",
+		"H2a": " una ciencia que se practica como un arte, un arte que se construye como conocimiento",
+		"P1": "el plástico nudoso sólo requiere un capital al alcance de cualquiera que se acerque a él con la curiosidad desinhibida que todo niño libre proyecta en todo para su mayor satisfacción."
+	},
+	"PNF": {
+		"H1": "¡no encontrado funciona !",
+		"H2": "vuelva más tarde - página en construcción"
+	}
+}

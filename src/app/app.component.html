@@ -40,7 +40,8 @@
             </select>
           </span>
         </li>
-
+      </ul>
+      <ul class="navbar-nav mx-auto">
         <li class="nav-item">
           <a class="nav-link" aria-current="page" routerLink="/">
             <i class="fas fa-home me-1"></i>{{ "APP.HOME" | translate }}</a
@@ -63,9 +64,9 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" aria-current="page" routerLink="/contact">
-            <i class="fas fa-envelope me-1"></i
-            >{{ "APP.CONTACT" | translate }}</a
-          >
+            <i class="fas fa-envelope me-1"></i>{{ "APP.CONTACT" | translate }}
+            <i class="fa-solid fa-anchor"></i
+          ></a>
         </li>
       </ul>
       <form class="d-flex">
@@ -94,8 +95,15 @@
 
 <footer class="nga-footer">
   <div class="py-3 text-center" style="background-color: black">
-    <div class="container">
-      2021 :<a href="https://whyknot-ff.web.app/"> www.whyknot.com</a>
+    <div class="container d-flex justify-content-around">
+      <span class="text-primary">today is {{ today | date: "shortDate" }}</span
+      ><i class="fa-solid fa-earth-africa"></i>
+      <span
+        ><span class="text-primary"></span
+        >{{ dursecondes | number: "1.0-0" }} days from ----{{
+          start | date: "shortDate"
+        }}</span
+      ><a href="https://web-knot.web.app/"> www.whyknot.com</a>
     </div>
   </div>
 </footer>

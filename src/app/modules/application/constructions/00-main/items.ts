@@ -18,4 +18,5 @@ export const ITEMS: any[] = [
     link: '',
     icon: 'fas fa-user-friends',
   },
+  { id: 10, name: 'lexique', link: 'lexique', icon: 'fas fa-user' },
 ];

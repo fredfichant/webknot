@@ -26,7 +26,7 @@ export class HomeComponent implements OnInit {
       {
         name: " let's draw knots",
         description:
-          'the plastic book of rare knots constitutes the systematic initiation to this new art-science. ',
+          'the  book "plastic of rare knots" constitutes the systematic initiation to this new art-science. ',
         icon: 'fas fa-palette',
         link: 'drawn-knots',
       },

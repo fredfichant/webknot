@@ -36,7 +36,9 @@ export function ModuleHttpLoaderFactory(http: HttpClient) {
       // Fetches file at e.g. /assets/i18n/en.json
       { baseTranslateUrl },
       // Fetches file at e.g. /assets/i18n/non-lazy/en.json
-      { baseTranslateUrl, moduleName: 'non-lazy', namespace: 'FEATURE_FOO' },
+      { baseTranslateUrl, moduleName: 'about', namespace: 'about' },
+      { baseTranslateUrl, moduleName: 'glossary', namespace: 'glossary' },
+      { baseTranslateUrl, moduleName: 'draw', namespace: 'draw' },
     ],
   };
   return new ModuleTranslateLoader(http, options);
@@ -49,7 +51,7 @@ export function ApplicationInitializerFactory(
     await injector.get(LOCATION_INITIALIZED, Promise.resolve(null));
 
     const defaultLang = 'en';
-    translate.addLangs(['en', 'es']);
+    translate.addLangs(['en', 'es', 'fr', 'it', 'ru', 'el', 'ja', 'zh']);
     translate.setDefaultLang(defaultLang);
     try {
       await translate.use(defaultLang).toPromise();
