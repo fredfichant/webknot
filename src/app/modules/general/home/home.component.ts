@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { environment } from '../../../../environments/environment';
 
 import { Inject, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
@@ -11,11 +10,6 @@ import { Meta, Title } from '@angular/platform-browser'; //optimisation SEO
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
-  name = environment.application.name;
-  angular = environment.application.angular;
-  bootstrap = environment.application.bootstrap;
-  fontawesome = environment.application.fontawesome;
-
   features: any;
   constructor(
     private meta: Meta,

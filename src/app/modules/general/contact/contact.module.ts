@@ -1,8 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { ShareIconsModule } from 'ngx-sharebuttons/icons';
-import { ShareButtonsModule } from 'ngx-sharebuttons/buttons';
 import { ContactComponent } from './contact.component';
 import { ContactRoutingModule } from './contact-routing.module';
 import { NgxTranslateCutModule } from 'ngx-translate-cut';
@@ -24,8 +22,6 @@ export function createTranslateLoader(http: HttpClient) {
   imports: [
     CommonModule,
     ContactRoutingModule,
-    ShareButtonsModule,
-    ShareIconsModule,
 
     NgxTranslateCutModule,
     TranslateModule.forChild({

@@ -10,100 +10,105 @@
       />
       <span class="nga-logo mx-1">{{ "APP.TITLE" | translate }}</span>
     </a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarCollapse"
-      aria-controls="navbarCollapse"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-      <ul class="navbar-nav mx-auto">
-        <li class="nav-item">
-          <span class="form-inline">
-            <select
-              class="form-control"
-              #selectedLang
-              (change)="switchLang(selectedLang.value)"
+
+    <!--lang selector-->
+
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item">
+        <span class="form-inline">
+          <select
+            class="form-control"
+            #selectedLang
+            (change)="switchLang(selectedLang.value)"
+          >
+            <option
+              *ngFor="let language of translate.getLangs()"
+              [value]="language"
+              [selected]="language === translate.currentLang"
             >
-              <option
-                *ngFor="let language of translate.getLangs()"
-                [value]="language"
-                [selected]="language === translate.currentLang"
-              >
-                {{ language }}
-              </option>
-            </select>
-          </span>
-        </li>
-      </ul>
-      <ul class="navbar-nav mx-auto">
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" routerLink="/">
-            <i class="fas fa-home me-1"></i>{{ "APP.HOME" | translate }}</a
-          >
-        </li>
-      </ul>
-      <ul class="navbar-nav mx-auto">
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" routerLink="/blog">
-            <i class="fas fa-marker"></i>{{ "APP.BLOG" | translate }}</a
-          >
-        </li>
-      </ul>
-      <ul class="navbar-nav me-auto">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" routerLink="/about">
-            <i class="far fa-question-circle me-1"></i
-            >{{ "APP.ABOUT" | translate }}</a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" routerLink="/contact">
-            <i class="fas fa-envelope me-1"></i>{{ "APP.CONTACT" | translate }}
-            <i class="fa-solid fa-anchor"></i
-          ></a>
-        </li>
-      </ul>
-      <form class="d-flex">
-        <button
-          type="button"
-          class="btn btn-sm nga-btn-navbar me-2"
-          routerLink="/signup"
+              {{ language }}
+            </option>
+          </select>
+        </span>
+      </li>
+    </ul>
+
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item">
+        <a class="nav-link" aria-current="page" routerLink="/">
+          <i class="fas fa-home me-1"></i>{{ "APP.HOME" | translate }}</a
         >
-          <i class="fas fa-user-plus me-2"></i>{{ "APP.SIGN" | translate }}
-        </button>
-        <button
-          type="button"
-          class="btn btn-sm btn-outline-light me-2"
-          routerLink="/login"
+      </li>
+    </ul>
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item">
+        <a class="nav-link" aria-current="page" routerLink="/blog">
+          <i class="fa-solid fa-blog"></i>{{ "APP.BLOG" | translate }}</a
         >
-          <i class="fas fa-sign-in-alt me-2"></i>{{ "APP.LOG" | translate }}
-        </button>
-      </form>
-    </div>
+      </li>
+    </ul>
+    <ul class="navbar-nav me-auto">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" routerLink="/about">
+          <i class="far fa-question-circle me-1"></i
+          >{{ "APP.ABOUT" | translate }}</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" aria-current="page" routerLink="/contact">
+          <i class="fas fa-envelope me-1"></i>{{ "APP.CONTACT" | translate }}
+          <i class="fa-solid fa-anchor"></i
+        ></a>
+      </li>
+    </ul>
   </nav>
 </header>
 
 <main>
   <router-outlet></router-outlet>
 </main>
-
+<!--pied de page-->
 <footer class="nga-footer">
-  <div class="py-3 text-center" style="background-color: black">
-    <div class="container d-flex justify-content-around">
-      <span class="text-primary">today is {{ today | date: "shortDate" }}</span
-      ><i class="fa-solid fa-earth-africa"></i>
-      <span
-        ><span class="text-primary"></span
-        >{{ dursecondes | number: "1.0-0" }} days from ----{{
-          start | date: "shortDate"
-        }}</span
-      ><a href="https://web-knot.web.app/"> www.whyknot.com</a>
-    </div>
+  <div class="container-fluid py-1">
+    <share-buttons
+      theme="circles-dark"
+      [include]="[
+        'copy',
+        'facebook',
+        'email',
+        'messenger',
+        'mix',
+        'line',
+        'linkedin',
+        'pinterest',
+        'print',
+        'reddit',
+        'sms',
+        'telegram',
+        'tumblr',
+        'twitter',
+        'viber',
+        'vk',
+        'xing',
+        'whatsapp'
+      ]"
+      [showIcon]="true"
+      [showText]="true"
+      url="https://web-knot.web.app/"
+      description="rare knots plastic"
+      twitterAccount="fred_fichant"
+      class="pt-5"
+    >
+    </share-buttons>
+  </div>
+  <div class="container d-flex justify-content-around">
+    <span class="text-primary">today is {{ today | date: "shortDate" }}</span
+    ><i class="fa-solid fa-earth-africa"></i>
+    <span
+      ><span class="text-primary"></span
+      >{{ dursecondes | number: "1.0-0" }} days from ----{{
+        start | date: "shortDate"
+      }}</span
+    ><a href="https://web-knot.web.app/"> www.whyknot.com</a>
   </div>
 </footer>

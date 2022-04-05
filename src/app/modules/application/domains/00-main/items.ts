@@ -10,8 +10,38 @@ export const ITEMS: any[] = [
   { id: 4, name: 'knot now', link: 'knotnow', icon: 'fas fa-house-user' },
   {
     id: 5,
-    name: 'chromo-dynamic plastic',
-    link: 'chromo',
+    name: 'true love',
+    link: 'amour-vraie',
     icon: 'fab fa-app-store',
+  },
+  {
+    id: 6,
+    name: 'la dame à la clitorne',
+    link: 'clitorne',
+    icon: 'far fa-address-card',
+  },
+  {
+    id: 7,
+    name: 'révolution intersexuelle de la paresse',
+    link: 'intersexuelle',
+    icon: 'far fa-address-card',
+  },
+  {
+    id: 8,
+    name: 'mon corps est mon corps',
+    link: 'corps',
+    icon: 'far fa-address-card',
+  },
+  {
+    id: 9,
+    name: 'vie sexuelle immortelle',
+    link: 'viesexe',
+    icon: 'far fa-address-card',
+  },
+  {
+    id: 10,
+    name: 'voix sur la dialectique spectaculaire',
+    link: 'voixdialectic',
+    icon: 'far fa-address-card',
   },
 ];

@@ -1,3 +1,10 @@
+import { AmourVraieComponent } from './amour-vraie/amour-vraie.component';
+import { ChapEEuComponent } from './chap-e/chap-e-eu/chap-e-eu.component';
+import { ChapEEoComponent } from './chap-e/chap-e-eo/chap-e-eo.component';
+import { ChapEEiComponent } from './chap-e/chap-e-ei/chap-e-ei.component';
+import { ChapEEeComponent } from './chap-e/chap-e-ee/chap-e-ee.component';
+import { ViesexeComponent } from './viesexe/viesexe.component';
+
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
@@ -18,6 +25,7 @@ import { HistoireComponent } from './histoire/histoire.component';
 import { HordeComponent } from './horde/horde.component';
 import { InternationaleComponent } from './internationale/internationale.component';
 import { IntersexuelleComponent } from './intersexuelle/intersexuelle.component';
+import { VoixdialecticComponent } from './voixdialectic/voixdialectic.component';
 
 const routes: Routes = [
   {
@@ -43,6 +51,14 @@ const routes: Routes = [
       { path: 'corps', component: CorpsComponent },
       { path: 'lessons', component: CapitalessonsComponent },
       { path: 'motions', component: MotionsComponent },
+      { path: 'viesexe', component: ViesexeComponent },
+      { path: 'voixdialectic', component: VoixdialecticComponent },
+      { path: 'chap-e-ee', component: ChapEEeComponent },
+      { path: 'chap-e-ei', component: ChapEEiComponent },
+      { path: 'chap-e-eo', component: ChapEEoComponent },
+      { path: 'chap-e-eu', component: ChapEEuComponent },
+      { path: 'amour-vraie', component: AmourVraieComponent },
+
       {
         path: '',
         redirectTo: '/domains/invitation',

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { environment } from '../../../../environments/environment';
 
 @Component({
   selector: 'app-contact',
@@ -7,6 +8,11 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./contact.component.scss'],
 })
 export class ContactComponent implements OnInit {
+  name = environment.application.name;
+  angular = environment.application.angular;
+  bootstrap = environment.application.bootstrap;
+  fontawesome = environment.application.fontawesome;
+
   constructor(private translate: TranslateService) {}
 
   /**

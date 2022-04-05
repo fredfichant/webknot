@@ -7,6 +7,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ShareIconsModule } from 'ngx-sharebuttons/icons';
+import { ShareButtonsModule } from 'ngx-sharebuttons/buttons';
 
 //translate module
 import { NgxTranslateCutModule } from 'ngx-translate-cut';
@@ -70,6 +72,8 @@ export function ApplicationInitializerFactory(
     AppRoutingModule,
     HttpClientModule,
     NgxTranslateCutModule,
+    ShareButtonsModule,
+    ShareIconsModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

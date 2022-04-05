@@ -1,3 +1,10 @@
+import { AmourVraieComponent } from './amour-vraie/amour-vraie.component';
+import { ChapEEuComponent } from './chap-e/chap-e-eu/chap-e-eu.component';
+import { ChapEEoComponent } from './chap-e/chap-e-eo/chap-e-eo.component';
+import { ChapEEiComponent } from './chap-e/chap-e-ei/chap-e-ei.component';
+import { ChapEEeComponent } from './chap-e/chap-e-ee/chap-e-ee.component';
+import { VoixdialecticComponent } from './voixdialectic/voixdialectic.component';
+import { ViesexeComponent } from './viesexe/viesexe.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NgMaterialModule } from 'src/app/shared/ng-material.module';
@@ -43,6 +50,13 @@ import { Animation5Component } from 'src/app/animations/animation5/animation5.co
     CorpsComponent,
     CapitalessonsComponent,
     MotionsComponent,
+    ViesexeComponent,
+    VoixdialecticComponent,
+    ChapEEeComponent,
+    ChapEEiComponent,
+    ChapEEoComponent,
+    ChapEEuComponent,
+    AmourVraieComponent,
 
     Animation1Component,
     Animation2Component,

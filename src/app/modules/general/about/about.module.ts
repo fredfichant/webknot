@@ -6,11 +6,16 @@ import { AboutRoutingModule } from './about-routing.module';
 
 import { HttpClient } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import {
+  LangChangeEvent,
+  TranslateLoader,
+  TranslateModule,
+  TranslateService,
+} from '@ngx-translate/core';
 import { NgxTranslateCutModule } from 'ngx-translate-cut';
 
 export function createTranslateLoader(http: HttpClient) {
-  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+  return new TranslateHttpLoader(http, './assets/i18n/about/', '.json');
 }
 
 @NgModule({
@@ -25,10 +30,23 @@ export function createTranslateLoader(http: HttpClient) {
         useFactory: createTranslateLoader,
         deps: [HttpClient],
       },
+      isolate: true, // <-- PLAY WITH IT
+      extend: true, // <-- PLAY WITH IT
     }),
   ],
   exports: [AboutComponent],
   declarations: [AboutComponent],
   providers: [],
 })
-export class AboutModule {}
+export class AboutModule {
+  constructor(public translationService: TranslateService) {
+    const currentLang = this.translationService.currentLang;
+    this.translationService.currentLang = '';
+    this.translationService.store.onLangChange.subscribe(
+      (lang: LangChangeEvent) => {
+        console.log(' ==> ContactModule ', lang);
+        this.translationService.use(lang.lang);
+      }
+    );
+  }
+}
